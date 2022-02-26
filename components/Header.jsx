@@ -5,12 +5,18 @@ import { AiOutlineClose } from "react-icons/ai";
 import { Transition } from "@headlessui/react";
 import logo from "../assets/logo.jpeg";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Header() {
   const { scrollTo } = useContext(SimpleContext);
   const [open, setOpen] = useState(false);
   return (
-    <div className="sticky top-0 z-10">
+    <motion.div
+      className="sticky top-0 z-10"
+      whileInView={{ opacity: [0, 1], scale: [0, 1.2, 1] }}
+      viewport={{ once: true }}
+      transition={{ duration: 1.5, ease: "easeInOut" }}
+    >
       <Transition
         show={open}
         className="fixed inset-y-0 right-0 z-50 min-h-screen w-[80%] bg-[#075264]"
@@ -127,6 +133,6 @@ export default function Header() {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

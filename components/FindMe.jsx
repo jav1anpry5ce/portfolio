@@ -1,9 +1,14 @@
 import React from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 export default function FindMe() {
   return (
-    <div className="left-30 fixed bottom-20 hidden sm:block">
+    <motion.div
+      className="left-30 fixed bottom-20 hidden sm:block"
+      whileInView={{ opacity: [0, 1], scale: [0, 1.2, 1] }}
+      viewport={{ once: true }}
+    >
       <div className="flex flex-col space-y-4">
         <a
           href="https://github.com/jav1anpry5ce"
@@ -26,6 +31,6 @@ export default function FindMe() {
           />
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }

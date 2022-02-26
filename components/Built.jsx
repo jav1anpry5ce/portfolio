@@ -63,7 +63,7 @@ export default function Built({
       </motion.div>
       <motion.div
         className="my-2 grow md:hidden"
-        whileInView={{ opacity: [0, 1] }}
+        whileInView={{ opacity: [0, 1], scale: [0, 1.2, 1] }}
         viewport={{ once: true }}
       >
         <Image

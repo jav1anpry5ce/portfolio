@@ -9,6 +9,7 @@ export default function Contact() {
       className="mx-auto mb-48 max-w-4xl"
       ref={contactRef}
       whileInView={{ opacity: [0, 1], scale: [0, 1.2, 1] }}
+      viewport={{ once: true }}
     >
       <div className="mb-16 flex justify-center space-x-4 text-xl">
         <span className="text-muted">03.</span>

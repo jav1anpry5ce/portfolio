@@ -13,7 +13,7 @@ export default function Contact() {
     >
       <div className="mb-8 flex justify-center text-xl md:mb-16 md:space-x-4">
         <span className="hidden text-muted sm:block">03.</span>
-        <span className="font-semibold text-gray-100">What&apos;s next?</span>
+        <span className="font-semibold text-gray-100">What&apos;s Next?</span>
       </div>
       <h3 className="text-center text-4xl font-bold text-gray-200">
         Get In Touch

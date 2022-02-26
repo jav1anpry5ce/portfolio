@@ -3,6 +3,8 @@ import { SimpleContext } from "../utils/simpleContext";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { Transition } from "@headlessui/react";
+import logo from "../assets/logo.jpeg";
+import Image from "next/image";
 
 export default function Header() {
   const { scrollTo } = useContext(SimpleContext);
@@ -72,7 +74,14 @@ export default function Header() {
         </div>
       </Transition>
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between bg-background/60 py-2 px-2 backdrop-blur-sm">
-        <p className="text-muted">Logo</p>
+        <Image
+          src={logo}
+          alt="logo"
+          width={55}
+          height={55}
+          className="cursor-pointer rounded-full"
+          onClick={() => scrollTo("main")}
+        />
         <div className="flex grow justify-end">
           <FaBars
             fontSize={30}

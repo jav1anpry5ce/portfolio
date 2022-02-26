@@ -3,11 +3,18 @@ import { createContext, useRef } from "react";
 const SimpleContext = createContext();
 
 const SimpleProvider = ({ children }) => {
+  const mainRef = useRef(null);
   const aboutRef = useRef(null);
   const workRef = useRef(null);
   const contactRef = useRef(null);
 
   const scrollTo = (type) => {
+    if (type === "main") {
+      mainRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
     if (type === "about") {
       aboutRef.current.scrollIntoView({
         behavior: "smooth",
@@ -18,7 +25,7 @@ const SimpleProvider = ({ children }) => {
         behavior: "smooth",
         block: "start",
       });
-    } else {
+    } else if (type === "contact") {
       contactRef.current.scrollIntoView({
         behavior: "smooth",
         block: "center",
@@ -30,6 +37,7 @@ const SimpleProvider = ({ children }) => {
     aboutRef,
     workRef,
     contactRef,
+    mainRef,
     scrollTo,
   };
 

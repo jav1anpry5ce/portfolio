@@ -48,6 +48,7 @@ export default function Work() {
         {data.map((item, index) => (
           <Built
             key={index}
+            index={index}
             name={item.name}
             image={item.image}
             description={item.description}

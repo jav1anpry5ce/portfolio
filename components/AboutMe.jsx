@@ -15,7 +15,7 @@ export default function AboutMe() {
         <span className="hidden text-muted sm:block">01.</span>
         <span className="font-semibold text-gray-100">About Me</span>
       </div>
-      <div className="flex w-full flex-col items-center  md:flex-row md:space-x-6">
+      <div className="flex w-full flex-col items-center md:flex-row md:items-start md:space-x-6">
         <div className="flex max-w-lg grow flex-col items-center space-y-6 pr-4 text-base font-medium text-gray-400 md:items-start">
           <motion.p whileInView={{ x: [-600, 0] }} viewport={{ once: true }}>
             Hello! My name is Javaughn Pryce I am a final year student at the

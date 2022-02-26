@@ -1,10 +1,15 @@
 import React, { useContext } from "react";
 import { SimpleContext } from "../utils/simpleContext";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   const { contactRef } = useContext(SimpleContext);
   return (
-    <div className="mx-auto mb-48 max-w-4xl" ref={contactRef}>
+    <motion.div
+      className="mx-auto mb-48 max-w-4xl"
+      ref={contactRef}
+      whileInView={{ opacity: [0, 1], scale: [0, 1.2, 1] }}
+    >
       <div className="mb-16 flex justify-center space-x-4 text-xl">
         <span className="text-muted">03.</span>
         <span className="font-semibold text-gray-100">What&apos;s next?</span>
@@ -24,6 +29,6 @@ export default function Contact() {
           Hit Me Up
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }

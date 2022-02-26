@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { AiFillGithub, AiOutlineEye } from "react-icons/ai";
-import ERMS from "../assets/ERMS.jpg";
+import { motion } from "framer-motion";
 
 export default function Built({
   name,
@@ -13,7 +13,11 @@ export default function Built({
 }) {
   return (
     <div className="flex w-full flex-col justify-between px-2 md:flex-row md:px-0">
-      <div className="hidden grow md:block">
+      <motion.div
+        className="hidden grow md:block"
+        whileInView={{ scale: [0, 1.2, 1] }}
+        viewport={{ once: true }}
+      >
         <Image
           src={image}
           alt="ERMS"
@@ -21,8 +25,12 @@ export default function Built({
           height={350}
           className="aspect-square rounded object-fill object-center"
         />
-      </div>
-      <div className="max-w-sm">
+      </motion.div>
+      <motion.div
+        className="max-w-sm"
+        whileInView={{ opacity: [0, 1] }}
+        viewport={{ once: true }}
+      >
         <div className="mb-6 text-right">
           <p className="font-medium text-muted">Featured Project</p>
           <h4 className="text-lg font-semibold text-gray-300">{name}</h4>
@@ -52,8 +60,12 @@ export default function Built({
             />
           </a>
         </div>
-      </div>
-      <div className="my-2 grow md:hidden">
+      </motion.div>
+      <motion.div
+        className="my-2 grow md:hidden"
+        whileInView={{ opacity: [0, 1] }}
+        viewport={{ once: true }}
+      >
         <Image
           src={image}
           alt="ERMS"
@@ -61,7 +73,7 @@ export default function Built({
           height={350}
           className="aspect-square rounded object-fill object-center"
         />
-      </div>
+      </motion.div>
     </div>
   );
 }

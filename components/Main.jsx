@@ -3,7 +3,11 @@ import { motion } from "framer-motion";
 
 export default function Main() {
   return (
-    <div className="m-auto mb-20 flex h-[calc(100vh-44px)] max-w-4xl flex-1 flex-col justify-center px-6 sm:px-0">
+    <motion.div
+      whileInView={{ opacity: [0, 1], x: [-300, 0] }}
+      viewport={{ once: true }}
+      className="m-auto mb-20 flex h-[calc(100vh-44px)] max-w-4xl flex-1 flex-col justify-center px-6 sm:px-0"
+    >
       <div className="space-y-5">
         <p className="text-lg text-secondary">Hi, my name is</p>
         <h1 className="text-7xl font-bold text-gray-50">Javaughn Pryce.</h1>
@@ -16,6 +20,6 @@ export default function Main() {
           development using React Native.
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }

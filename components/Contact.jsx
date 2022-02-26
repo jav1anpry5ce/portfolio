@@ -1,0 +1,29 @@
+import React, { useContext } from "react";
+import { SimpleContext } from "../utils/simpleContext";
+
+export default function Contact() {
+  const { contactRef } = useContext(SimpleContext);
+  return (
+    <div className="mx-auto mb-48 max-w-4xl" ref={contactRef}>
+      <div className="mb-16 flex justify-center space-x-4 text-xl">
+        <span className="text-muted">03.</span>
+        <span className="font-semibold text-gray-100">What&apos;s next?</span>
+      </div>
+      <h3 className="text-center text-4xl font-bold text-gray-200">
+        Get In Touch
+      </h3>
+      <p className="mx-auto mt-6 max-w-md text-center text-2xl font-medium text-gray-400">
+        I am always looking for new and exciting projects to work on. Hit me up
+        and let&apos;s talk!
+      </p>
+      <div className="mt-12 flex w-full items-center justify-center">
+        <a
+          href="mailto:javanpryce1@gmail.com"
+          className="cursor-pointer rounded px-8 py-3 text-muted ring-1 ring-muted transition duration-300 hover:bg-muted hover:text-white"
+        >
+          Hit Me Up
+        </a>
+      </div>
+    </div>
+  );
+}

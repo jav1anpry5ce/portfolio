@@ -8,7 +8,7 @@ export default function Main() {
     <motion.div
       whileInView={{ opacity: [0, 1], x: [-300, 0] }}
       viewport={{ once: true }}
-      className="m-auto mb-20 flex h-[calc(100vh-44px)] max-w-4xl flex-1 flex-col justify-center px-6 sm:px-0"
+      className="m-auto mb-20 flex h-[calc(100vh-71px)] max-w-4xl flex-1 flex-col justify-center px-6 sm:px-0"
       ref={mainRef}
     >
       <div className="space-y-5">

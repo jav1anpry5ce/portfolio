@@ -4,8 +4,7 @@ import { promisify } from "util";
 import fetch from "node-fetch";
 
 const pipeline = promisify(stream.pipeline);
-const url =
-  "https://www.dropbox.com/s/tcg5o2ya469bpmk/Javaughn_Pryce_Resume.pdf?dl=0";
+const url = "http://javaughnpryce.live:5001/Javaughn_Pryce_Resume.pdf";
 
 export default async function handler(req, res) {
   const response = await fetch(url); // replace this with your API call & options
@@ -13,6 +12,9 @@ export default async function handler(req, res) {
     throw new Error(`unexpected response ${response.statusText}`);
 
   res.setHeader("Content-Type", "application/pdf");
-  res.setHeader("Content-Disposition", "attachment; filename=dummy.pdf");
+  res.setHeader(
+    "Content-Disposition",
+    "attachment; filename=Javaughn_Pryce_Resume.pdf"
+  );
   await pipeline(response.body, res);
 }

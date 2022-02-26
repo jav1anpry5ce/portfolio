@@ -24,14 +24,14 @@ export default function AboutMe() {
             started in 2019 after starting university.
           </motion.p>
           <motion.p whileInView={{ x: [600, 0] }} viewport={{ once: true }}>
-            Fast-forward to toady, and I&apos;ve had the pleasure of working on
-            some very exciting projects. One of my favorite projects was
-            building a virtual meeting room using Three JS along with React and
-            Node JS. I also placed first place in the annual Byte the Pi
-            Caribbean Hackathon, my team and I built a web application that
-            would speed up the registration process for vaccination and testing
-            of the COVID 19 pandemic. The system was also designed to manage the
-            inventory of the vaccines.
+            Fast-forward to today, I&apos;ve had the pleasure of working on some
+            very exciting projects. One of my favorite projects was building a
+            virtual meeting room using Three JS along with React and Node JS. I
+            also placed first place in the annual Byte the Pi Caribbean
+            Hackathon, my team and I built a web application that would speed up
+            the registration process for vaccination and testing of the COVID 19
+            pandemic. The system was also designed to manage the inventory of
+            the vaccines.
           </motion.p>
           <motion.p whileInView={{ x: [-600, 0] }} viewport={{ once: true }}>
             Here are a few of the technologies I&apos;ve been working with

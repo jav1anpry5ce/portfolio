@@ -6,6 +6,7 @@ export default function Home() {
     <div className="relative mx-auto my-2 w-full max-w-7xl flex-1 overflow-x-hidden">
       <Head>
         <title>Portfolio - Javaughn Pryce</title>
+        <link rel="shortcut icon" href="/public/logo.png" />
       </Head>
       <MailMe />
       <FindMe />

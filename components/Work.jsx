@@ -39,7 +39,7 @@ export default function Work() {
   return (
     <div className="mx-auto mb-20 max-w-4xl md:mb-80" ref={workRef}>
       <div className="mb-16 flex justify-center space-x-4 text-3xl md:justify-start">
-        <span className="text-muted">02.</span>
+        <span className="hidden text-muted sm:block">02.</span>
         <span className="font-semibold text-gray-100">
           Some Things I&apos;ve Built
         </span>

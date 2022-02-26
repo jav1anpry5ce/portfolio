@@ -11,8 +11,8 @@ export default function AboutMe() {
       className="mx-auto mb-20 max-w-4xl px-6 md:mb-80 md:px-0"
       ref={aboutRef}
     >
-      <div className="mb-16 flex justify-center space-x-4 text-3xl md:justify-start">
-        <span className="text-muted">01.</span>
+      <div className="mb-8 flex justify-center space-x-4 text-3xl md:mb-16 md:justify-start">
+        <span className="hidden text-muted sm:block">01.</span>
         <span className="font-semibold text-gray-100">About Me</span>
       </div>
       <div className="flex w-full flex-col md:flex-row md:space-x-6">

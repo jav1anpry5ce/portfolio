@@ -27,7 +27,7 @@ export default function Built({
         />
       </motion.div>
       <motion.div
-        className="max-w-sm"
+        className="md:max-w-sm"
         whileInView={{ opacity: [0, 1] }}
         viewport={{ once: true }}
       >
@@ -62,7 +62,7 @@ export default function Built({
         </div>
       </motion.div>
       <motion.div
-        className="my-2 grow md:hidden"
+        className="my-2 flex grow justify-end md:hidden"
         whileInView={{ opacity: [0, 1], scale: [0, 1.2, 1] }}
         viewport={{ once: true }}
       >

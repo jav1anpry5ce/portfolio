@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function MailMe() {
   return (
     <motion.div
-      className="fixed right-24 bottom-10 hidden sm:block"
+      className="fixed right-16 bottom-10 hidden md:block"
       whileInView={{ opacity: [0, 1], scale: [0, 1.2, 1] }}
       viewport={{ once: true }}
     >

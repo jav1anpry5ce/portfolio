@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function FindMe() {
   return (
     <motion.div
-      className="left-30 fixed bottom-20 hidden sm:block"
+      className="left-30 fixed bottom-20 hidden px-2 md:block"
       whileInView={{ opacity: [0, 1], scale: [0, 1.2, 1] }}
       viewport={{ once: true }}
     >

@@ -12,7 +12,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   return (
     <motion.div
-      className="sticky top-0 z-10"
+      className="sticky top-0 z-[9999]"
       whileInView={{ opacity: [0, 1], scale: [0, 1.05, 1] }}
       viewport={{ once: true }}
       transition={{ duration: 1.1, ease: "easeInOut" }}

@@ -2,7 +2,7 @@
 
 const fs = require("fs");
 const file = fs.createReadStream("./assets/Javaughn_Pryce_Resume.pdf");
-const stat = fs.statSync("././assets/Javaughn_Pryce_Resume.pdf");
+const stat = fs.statSync("./assets/Javaughn_Pryce_Resume.pdf");
 
 export default async function handler(req, res) {
   res.setHeader("Content-Length", stat.size);

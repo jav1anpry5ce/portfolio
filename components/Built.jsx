@@ -51,7 +51,7 @@ export default function Built({
           </div>
         </motion.div>
         <motion.div
-          className="z-10 my-2 grow md:my-0 md:block"
+          className="my-2 grow md:my-0 md:block"
           whileInView={{ scale: [0, 1.2, 1] }}
           viewport={{ once: true }}
         >

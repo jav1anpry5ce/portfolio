@@ -6,6 +6,7 @@ export default function Main() {
   const { mainRef } = useContext(SimpleContext);
   return (
     <motion.div
+      initial={{ opacity: 0 }}
       whileInView={{ opacity: [0, 1], x: [-300, 0] }}
       viewport={{ once: true }}
       className="mx-auto mb-20 flex min-h-[calc(100vh-71px)] max-w-4xl flex-1 flex-col justify-center px-4 sm:px-2"

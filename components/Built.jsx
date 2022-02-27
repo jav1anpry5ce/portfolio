@@ -17,6 +17,7 @@ export default function Built({
       <div className="flex w-full flex-col justify-between px-2 md:flex-row md:px-0">
         <motion.div
           className="order-last my-2 grow md:my-0 md:block"
+          initial={{ opacity: 0 }}
           whileInView={{ scale: [0, 1.2, 1] }}
           viewport={{ once: true }}
         >

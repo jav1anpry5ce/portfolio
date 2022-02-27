@@ -8,11 +8,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Header() {
-  const { scrollTo, open, setOpen } = useContext(SimpleContext);
+  const { scrollTo } = useContext(SimpleContext);
+  const [open, setOpen] = useState(false);
   return (
     <motion.div
       className="sticky top-0 z-[9999]"
-      whileInView={{ opacity: [0, 1], scale: [0, 1.05, 1] }}
+      whileInView={{ opacity: [0, 1], scale: [0, 1] }}
       viewport={{ once: true }}
       transition={{ duration: 1.1, ease: "easeInOut" }}
     >

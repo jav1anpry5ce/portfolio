@@ -7,10 +7,9 @@ import { motion } from "framer-motion";
 export default function AboutMe() {
   const { aboutRef } = useContext(SimpleContext);
   return (
-    <motion.div
+    <div
       className="mx-auto mb-20 max-w-4xl px-6 md:mb-80 md:px-2"
       ref={aboutRef}
-      initial={{ opacity: 0 }}
     >
       <div className="mb-8 flex justify-center text-3xl md:mb-16 md:justify-start md:space-x-4">
         <span className="hidden text-muted sm:block">01.</span>
@@ -69,6 +68,6 @@ export default function AboutMe() {
           />
         </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 }

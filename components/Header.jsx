@@ -8,8 +8,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Header() {
-  const { scrollTo } = useContext(SimpleContext);
-  const [open, setOpen] = useState(false);
+  const { scrollTo, open, setOpen } = useContext(SimpleContext);
   return (
     <motion.div
       className="sticky top-0 z-[9999]"

@@ -1,4 +1,4 @@
-import { createContext, useRef } from "react";
+import { createContext, useRef, useState } from "react";
 
 const SimpleContext = createContext();
 
@@ -7,6 +7,7 @@ const SimpleProvider = ({ children }) => {
   const aboutRef = useRef(null);
   const workRef = useRef(null);
   const contactRef = useRef(null);
+  const [open, setOpen] = useState(false);
 
   const scrollTo = (type) => {
     if (type === "main") {
@@ -39,6 +40,8 @@ const SimpleProvider = ({ children }) => {
     contactRef,
     mainRef,
     scrollTo,
+    open,
+    setOpen,
   };
 
   return (

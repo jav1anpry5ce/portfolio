@@ -8,27 +8,22 @@ import {
   Header,
 } from "../components";
 import Head from "next/head";
-import { SimpleContext } from "../utils/simpleContext";
-import { useContext } from "react";
 
 export default function Home() {
-  const { open } = useContext(SimpleContext);
   return (
-    <div
-      className={`relative mx-auto h-screen w-full max-w-full flex-1 overflow-x-hidden ${
-        open && "overflow-hidden"
-      }`}
-    >
+    <div className="mx-auto my-2 w-full max-w-7xl flex-1">
       <Head>
         <title>Portfolio - Javaughn Pryce</title>
       </Head>
       <Header />
-      <MailMe />
-      <FindMe />
-      <Main />
-      <AboutMe />
-      <Work />
-      <Contact />
+      <div className="overflow-x-hidden">
+        <MailMe />
+        <FindMe />
+        <Main />
+        <AboutMe />
+        <Work />
+        <Contact />
+      </div>
     </div>
   );
 }

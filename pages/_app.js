@@ -1,10 +1,9 @@
-import '../styles/globals.css'
-import { Header } from "../components";
+import "../styles/globals.css";
 import { SimpleProvider } from "../utils/simpleContext";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="flex h-screen flex-col bg-background">
+    <div className="flex min-h-screen flex-col bg-background pt-3">
       <SimpleProvider>
         <Component {...pageProps} />
       </SimpleProvider>
@@ -12,4 +11,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp
+export default MyApp;

@@ -5,18 +5,18 @@ import { motion } from "framer-motion";
 export default function FindMe() {
   return (
     <motion.div
-      className="left-30 fixed bottom-20 hidden px-2 md:block"
+      className="fixed left-32 bottom-20 hidden px-2 md:block"
       whileInView={{ opacity: [0, 1], scale: [0, 1.2, 1] }}
       viewport={{ once: true }}
     >
-      <div className="flex flex-col space-y-4">
+      <div className="flex flex-col space-y-5">
         <a
           href="https://github.com/jav1anpry5ce"
           target="_blank"
           rel="noreferrer"
         >
           <AiFillGithub
-            className="transform cursor-pointer text-gray-300 duration-300 hover:text-muted"
+            className="transform cursor-pointer text-gray-300 duration-300 hover:-translate-y-1 hover:text-muted"
             fontSize={30}
           />
         </a>
@@ -26,7 +26,7 @@ export default function FindMe() {
           rel="noreferrer"
         >
           <AiFillLinkedin
-            className="transform cursor-pointer  text-gray-300 duration-300 hover:text-muted"
+            className="transform cursor-pointer  text-gray-300 duration-300 hover:-translate-y-1 hover:text-muted"
             fontSize={30}
           />
         </a>

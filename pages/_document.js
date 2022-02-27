@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <link rel="shortcut icon" href="/static/logo.png" />
       </Head>
-      <body className="overflow-x-hidden">
+      <body className="overflow-hidden">
         <Main />
         <NextScript />
       </body>

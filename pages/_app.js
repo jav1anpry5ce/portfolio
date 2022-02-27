@@ -4,9 +4,8 @@ import { SimpleProvider } from "../utils/simpleContext";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="flex min-h-screen flex-col bg-background pt-3">
+    <div className="flex h-screen flex-col bg-background">
       <SimpleProvider>
-        <Header />
         <Component {...pageProps} />
       </SimpleProvider>
     </div>

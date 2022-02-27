@@ -16,6 +16,19 @@ export default function Built({
     return (
       <div className="flex w-full flex-col justify-between px-2 md:flex-row md:px-0">
         <motion.div
+          className="order-last my-2 grow md:my-0 md:block"
+          whileInView={{ scale: [0, 1.2, 1] }}
+          viewport={{ once: true }}
+        >
+          <Image
+            src={image}
+            alt="ERMS"
+            width={550}
+            height={350}
+            className="aspect-square rounded object-fill object-center"
+          />
+        </motion.div>
+        <motion.div
           className="md:max-w-sm"
           whileInView={{ opacity: [0, 1] }}
           viewport={{ once: true }}
@@ -50,26 +63,13 @@ export default function Built({
             </a>
           </div>
         </motion.div>
-        <motion.div
-          className="my-2 grow md:my-0 md:block"
-          whileInView={{ scale: [0, 1.2, 1] }}
-          viewport={{ once: true }}
-        >
-          <Image
-            src={image}
-            alt="ERMS"
-            width={550}
-            height={350}
-            className="aspect-square rounded object-fill object-center"
-          />
-        </motion.div>
       </div>
     );
   } else
     return (
       <div className="flex w-full flex-col justify-between px-2 md:flex-row md:px-0">
         <motion.div
-          className="hidden grow md:block"
+          className="order-last my-2 grow md:order-first md:my-0"
           whileInView={{ scale: [0, 1.2, 1] }}
           viewport={{ once: true }}
         >
@@ -115,19 +115,6 @@ export default function Built({
               />
             </a>
           </div>
-        </motion.div>
-        <motion.div
-          className="my-2 flex grow justify-end md:hidden"
-          whileInView={{ opacity: [0, 1], scale: [0, 1.2, 1] }}
-          viewport={{ once: true }}
-        >
-          <Image
-            src={image}
-            alt="ERMS"
-            width={550}
-            height={350}
-            className="aspect-square rounded object-fill object-center"
-          />
         </motion.div>
       </div>
     );

@@ -79,7 +79,7 @@ export default function Header() {
           </a>
         </div>
       </Transition>
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between bg-background/60 py-2 px-2 backdrop-blur-sm">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between bg-background/60 py-2 px-2 backdrop-blur-lg">
         <Image
           src={logo}
           alt="logo"

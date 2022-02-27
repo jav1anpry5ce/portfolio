@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
     body {
-        overflow:overlay
+        overflow:overlay;
+        font-family: 'Open Sans', sans-serif;
     }
     ::-webkit-scrollbar {
         width: 6px;

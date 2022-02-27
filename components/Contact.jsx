@@ -11,7 +11,7 @@ export default function Contact() {
       whileInView={{ opacity: [0, 1], scale: [0, 1.2, 1] }}
       viewport={{ once: true }}
     >
-      <div className="mb-8 flex justify-center text-xl md:mb-16 md:space-x-4">
+      <div className="mb-8 flex justify-center text-xl md:mb-16 md:space-x-3">
         <span className="hidden text-muted sm:block">03.</span>
         <span className="font-semibold text-gray-100">What&apos;s Next?</span>
       </div>

@@ -17,75 +17,87 @@ export default function Header() {
       viewport={{ once: true }}
       transition={{ ease: "easeInOut" }}
     >
-      <Transition
-        show={open}
-        as={Fragment}
-        // className="fixed inset-y-0 z-[9999] min-h-screen w-[100%] bg-white/0 backdrop-blur-md"
-        enter="transform duration-300"
-        enterFrom="translate-x-[100%]"
-        enterTo="translate-x-0"
-        leave="transform duration-300"
-        leaveFrom="translate-x-0"
-        leaveTo="translate-x-[100%]"
-      >
+      <Transition show={open} appear as={Fragment}>
         <Dialog
-          onClose={() => setOpen(false)}
           className="fixed inset-0 z-[9999] bg-white/0 backdrop-blur-md"
-          as="div"
+          as={Fragment}
+          onClose={() => setOpen(false)}
         >
-          <Dialog.Overlay />
-          <div className="absolute right-0 min-h-screen w-[80%] bg-[#075264]">
-            <div className="flex w-full flex-col items-end px-4 pt-3">
-              <AiOutlineClose
-                fontSize={30}
-                className="text-white sm:hidden"
-                onClick={() => setOpen(!open)}
-              />
-              <div
-                className="group my-2 mt-12 flex w-full cursor-pointer items-start space-x-2 text-xl"
-                onClick={() => {
-                  scrollTo("about");
-                  setOpen(!open);
-                }}
-              >
-                <span className="text-muted">01.</span>
-                <span className="text-gray-100 underline-offset-2 group-hover:underline">
-                  About
-                </span>
-              </div>
-              <div
-                className="group my-2 flex w-full cursor-pointer items-start space-x-2 text-xl"
-                onClick={() => {
-                  scrollTo("work");
-                  setOpen(!open);
-                }}
-              >
-                <span className="text-muted">02.</span>
-                <span className="text-gray-100 underline-offset-2 group-hover:underline">
-                  Work
-                </span>
-              </div>
-              <div
-                className="group my-2 flex w-full cursor-pointer items-start space-x-2 text-xl"
-                onClick={() => {
-                  scrollTo("contact");
-                  setOpen(!open);
-                }}
-              >
-                <span className="text-muted">03.</span>
-                <span className="text-gray-100 underline-offset-2 group-hover:underline">
-                  Contact
-                </span>
-              </div>
-              <a
-                href="api/resume"
-                download
-                className="my-2 cursor-pointer self-start rounded bg-transparent 
+          <div className="min-h-screen">
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <Dialog.Overlay />
+            </Transition.Child>
+            <Transition.Child
+              as={Fragment}
+              enter="transform ease-in-out duration-300"
+              enterFrom="translate-x-[100%]"
+              enterTo="translate-x-0"
+              leave="transform ease-in-out duration-300"
+              leaveFrom="translate-x-0"
+              leaveTo="translate-x-[100%]"
+            >
+              <div className="absolute right-0 h-full w-[80%] bg-[#075264]">
+                <div className="flex w-full flex-col items-end px-4 pt-3">
+                  <AiOutlineClose
+                    fontSize={30}
+                    className="text-white sm:hidden"
+                    onClick={() => setOpen(!open)}
+                  />
+                  <div
+                    className="group my-2 mt-12 flex w-full cursor-pointer items-start space-x-2 text-xl"
+                    onClick={() => {
+                      scrollTo("about");
+                      setOpen(!open);
+                    }}
+                  >
+                    <span className="text-muted">01.</span>
+                    <span className="text-gray-100 underline-offset-2 group-hover:underline">
+                      About
+                    </span>
+                  </div>
+                  <div
+                    className="group my-2 flex w-full cursor-pointer items-start space-x-2 text-xl"
+                    onClick={() => {
+                      scrollTo("work");
+                      setOpen(!open);
+                    }}
+                  >
+                    <span className="text-muted">02.</span>
+                    <span className="text-gray-100 underline-offset-2 group-hover:underline">
+                      Work
+                    </span>
+                  </div>
+                  <div
+                    className="group my-2 flex w-full cursor-pointer items-start space-x-2 text-xl"
+                    onClick={() => {
+                      scrollTo("contact");
+                      setOpen(!open);
+                    }}
+                  >
+                    <span className="text-muted">03.</span>
+                    <span className="text-gray-100 underline-offset-2 group-hover:underline">
+                      Contact
+                    </span>
+                  </div>
+                  <a
+                    href="api/resume"
+                    download
+                    className="my-2 cursor-pointer self-start rounded bg-transparent 
         px-4 py-2 text-muted ring-1 ring-muted transition duration-200 hover:bg-muted hover:text-gray-100 sm:block"
-              >
-                Resume
-              </a>
-            </div>
+                  >
+                    Resume
+                  </a>
+                </div>
+              </div>
+            </Transition.Child>
           </div>
         </Dialog>
       </Transition>

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { SimpleContext } from "../utils/simpleContext";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
@@ -11,6 +11,18 @@ export default function Header() {
   const { scrollTo, mainRef, aboutRef, workRef, contactRef } =
     useContext(SimpleContext);
   const [open, setOpen] = useState(false);
+  const [shadow, setShadow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 200) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    });
+  }, []);
+
   return (
     <motion.div
       className="sticky top-0 z-[9999]"
@@ -82,58 +94,60 @@ export default function Header() {
           </div>
         </div>
       </Transition>
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between bg-background/60 py-2 px-2 backdrop-blur-lg">
-        <Image
-          src={logo}
-          alt="logo"
-          width={55}
-          height={55}
-          className="cursor-pointer rounded-full"
-          onClick={() => scrollTo(mainRef)}
-        />
-        <div className="flex grow justify-end">
-          <FaBars
-            fontSize={30}
-            className="text-white sm:hidden"
-            onClick={() => setOpen(!open)}
+      <div className={`w-full bg-background/60 ${shadow && "shadow-lg"}`}>
+        <div className="mx-auto flex w-full max-w-7xl items-center justify-between bg-background/60 py-2 px-2  backdrop-blur-lg">
+          <Image
+            src={logo}
+            alt="logo"
+            width={55}
+            height={55}
+            className="cursor-pointer rounded-full"
+            onClick={() => scrollTo(mainRef)}
           />
-        </div>
-        <div className="flex items-center space-x-4">
-          <div
-            className="group hidden cursor-pointer items-center space-x-2 sm:flex"
-            onClick={() => scrollTo(aboutRef)}
-          >
-            <span className="text-muted">01.</span>
-            <span className="text-gray-100 underline-offset-2 group-hover:underline">
-              About
-            </span>
+          <div className="flex grow justify-end">
+            <FaBars
+              fontSize={30}
+              className="text-white sm:hidden"
+              onClick={() => setOpen(!open)}
+            />
           </div>
-          <div
-            className="group hidden cursor-pointer items-center space-x-2 sm:flex"
-            onClick={() => scrollTo(workRef)}
-          >
-            <span className="text-muted">02.</span>
-            <span className="text-gray-100 underline-offset-2 group-hover:underline">
-              Work
-            </span>
-          </div>
-          <div
-            className="group hidden cursor-pointer items-center space-x-2 sm:flex "
-            onClick={() => scrollTo(contactRef)}
-          >
-            <span className="text-muted">03.</span>
-            <span className="text-gray-100 underline-offset-2 group-hover:underline">
-              Contact
-            </span>
-          </div>
-          <a
-            href="api/resume"
-            download
-            className="hidden cursor-pointer rounded bg-transparent px-4 py-2 
+          <div className="flex items-center space-x-4">
+            <div
+              className="group hidden cursor-pointer items-center space-x-2 sm:flex"
+              onClick={() => scrollTo(aboutRef)}
+            >
+              <span className="text-muted">01.</span>
+              <span className="text-gray-100 underline-offset-2 group-hover:underline">
+                About
+              </span>
+            </div>
+            <div
+              className="group hidden cursor-pointer items-center space-x-2 sm:flex"
+              onClick={() => scrollTo(workRef)}
+            >
+              <span className="text-muted">02.</span>
+              <span className="text-gray-100 underline-offset-2 group-hover:underline">
+                Work
+              </span>
+            </div>
+            <div
+              className="group hidden cursor-pointer items-center space-x-2 sm:flex "
+              onClick={() => scrollTo(contactRef)}
+            >
+              <span className="text-muted">03.</span>
+              <span className="text-gray-100 underline-offset-2 group-hover:underline">
+                Contact
+              </span>
+            </div>
+            <a
+              href="api/resume"
+              download
+              className="hidden cursor-pointer rounded bg-transparent px-4 py-2 
         text-muted ring-1 ring-muted transition duration-200 hover:bg-muted hover:text-gray-100 sm:block"
-          >
-            Resume
-          </a>
+            >
+              Resume
+            </a>
+          </div>
         </div>
       </div>
     </motion.div>

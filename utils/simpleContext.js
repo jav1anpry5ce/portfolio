@@ -10,7 +10,7 @@ const SimpleProvider = ({ children }) => {
 
   const scrollTo = (ref) => {
     const elementPosition = ref.current.getBoundingClientRect().top;
-    const offset = 85;
+    const offset = 100;
     const offsetPosition = elementPosition + window.pageYOffset - offset;
     window.scrollTo({
       top: offsetPosition,

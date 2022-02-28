@@ -71,7 +71,7 @@ export default function Header() {
               </span>
             </div>
             <a
-              href="http://javaughnpryce.live:5001/Javaughn_Pryce_Resume.pdf"
+              href="api/resume"
               download
               className="my-2 cursor-pointer self-start rounded bg-transparent 
         px-4 py-2 text-muted ring-1 ring-muted transition duration-200 hover:bg-muted hover:text-gray-100 sm:block"
@@ -126,7 +126,7 @@ export default function Header() {
             </span>
           </div>
           <a
-            href="http://javaughnpryce.live:5001/Javaughn_Pryce_Resume.pdf"
+            href="api/resume"
             download
             className="hidden cursor-pointer rounded bg-transparent px-4 py-2 
         text-muted ring-1 ring-muted transition duration-200 hover:bg-muted hover:text-gray-100 sm:block"

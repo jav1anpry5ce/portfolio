@@ -20,12 +20,12 @@ export default function AboutMe() {
           <motion.p whileInView={{ x: [-600, 0] }} viewport={{ once: true }}>
             Hello! My name is Javaughn Pryce I am a final year student at the
             University of the Commonwealth Caribbean. You can always find me at
-            my computer working on a new ideas. My interest for web development
+            my computer working on new ideas. My interest in web development
             started in 2019 after starting university.
           </motion.p>
           <motion.p whileInView={{ x: [600, 0] }} viewport={{ once: true }}>
             Fast-forward to today, I&apos;ve had the pleasure of working on some
-            very exciting projects. One of my favorite project was building a
+            very exciting projects. One of my favorite projects was building a
             virtual meeting room using Three JS along with React and Node JS. I
             was also placed first place in the annual Byte the Pi Caribbean
             Hackathon, my team and I built a web application that would speed up

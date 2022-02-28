@@ -10,7 +10,7 @@ export default function MailMe() {
     >
       <a
         href="mailto:javanpryce1@gmail.com"
-        className="vertical transform cursor-pointer text-gray-300 duration-300 hover:-translate-y-1 hover:text-muted"
+        className="vertical transform cursor-pointer text-sm text-gray-300 duration-300 hover:-translate-y-1 hover:text-muted"
       >
         javanpryce1@gmail.com
       </a>

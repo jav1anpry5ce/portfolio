@@ -43,9 +43,11 @@ export default function Built({
           <div className="text-left text-gray-200 md:hidden">
             <p>{description}</p>
           </div>
-          <div className="mt-4 flex w-full flex-wrap justify-around text-left text-gray-400 md:justify-start md:space-x-4">
+          <div className="mt-4 flex w-full flex-wrap text-left text-gray-400">
             {builtWith.map((name, index) => (
-              <p key={index}>{name}</p>
+              <p key={index} className="mr-3">
+                {name}
+              </p>
             ))}
           </div>
           <div className="mt-6 flex justify-start space-x-4">

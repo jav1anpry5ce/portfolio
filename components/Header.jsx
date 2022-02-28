@@ -15,7 +15,7 @@ export default function Header() {
       className="sticky top-0 z-[9999]"
       whileInView={{ opacity: [0, 1], scale: [0, 1] }}
       viewport={{ once: true }}
-      transition={{ duration: 1.1, ease: "easeInOut" }}
+      transition={{ ease: "easeInOut" }}
     >
       <Transition
         show={open}

@@ -8,29 +8,14 @@ const SimpleProvider = ({ children }) => {
   const workRef = useRef(null);
   const contactRef = useRef(null);
 
-  const scrollTo = (type) => {
-    if (type === "main") {
-      mainRef.current.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-    if (type === "about") {
-      aboutRef.current.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-      });
-    } else if (type === "work") {
-      workRef.current.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    } else if (type === "contact") {
-      contactRef.current.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-      });
-    }
+  const scrollTo = (ref) => {
+    const elementPosition = ref.current.getBoundingClientRect().top;
+    const offset = 85;
+    const offsetPosition = elementPosition + window.pageYOffset - offset;
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
   };
 
   const value = {

@@ -8,7 +8,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Header() {
-  const { scrollTo } = useContext(SimpleContext);
+  const { scrollTo, mainRef, aboutRef, workRef, contactRef } =
+    useContext(SimpleContext);
   const [open, setOpen] = useState(false);
   return (
     <motion.div
@@ -37,7 +38,7 @@ export default function Header() {
             <div
               className="group my-2 mt-12 flex w-full cursor-pointer items-start space-x-2 text-xl"
               onClick={() => {
-                scrollTo("about");
+                scrollTo(aboutRef);
                 setOpen(!open);
               }}
             >
@@ -49,7 +50,7 @@ export default function Header() {
             <div
               className="group my-2 flex w-full cursor-pointer items-start space-x-2 text-xl"
               onClick={() => {
-                scrollTo("work");
+                scrollTo(workRef);
                 setOpen(!open);
               }}
             >
@@ -61,7 +62,7 @@ export default function Header() {
             <div
               className="group my-2 flex w-full cursor-pointer items-start space-x-2 text-xl"
               onClick={() => {
-                scrollTo("contact");
+                scrollTo(contactRef);
                 setOpen(!open);
               }}
             >
@@ -88,7 +89,7 @@ export default function Header() {
           width={55}
           height={55}
           className="cursor-pointer rounded-full"
-          onClick={() => scrollTo("main")}
+          onClick={() => scrollTo(mainRef)}
         />
         <div className="flex grow justify-end">
           <FaBars
@@ -100,7 +101,7 @@ export default function Header() {
         <div className="flex items-center space-x-4">
           <div
             className="group hidden cursor-pointer items-center space-x-2 sm:flex"
-            onClick={() => scrollTo("about")}
+            onClick={() => scrollTo(aboutRef)}
           >
             <span className="text-muted">01.</span>
             <span className="text-gray-100 underline-offset-2 group-hover:underline">
@@ -109,7 +110,7 @@ export default function Header() {
           </div>
           <div
             className="group hidden cursor-pointer items-center space-x-2 sm:flex"
-            onClick={() => scrollTo("work")}
+            onClick={() => scrollTo(workRef)}
           >
             <span className="text-muted">02.</span>
             <span className="text-gray-100 underline-offset-2 group-hover:underline">
@@ -118,7 +119,7 @@ export default function Header() {
           </div>
           <div
             className="group hidden cursor-pointer items-center space-x-2 sm:flex "
-            onClick={() => scrollTo("contact")}
+            onClick={() => scrollTo(contactRef)}
           >
             <span className="text-muted">03.</span>
             <span className="text-gray-100 underline-offset-2 group-hover:underline">

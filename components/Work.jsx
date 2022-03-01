@@ -46,16 +46,7 @@ export default function Work() {
       </div>
       <div className="flex flex-col space-y-20">
         {data.map((item, index) => (
-          <Built
-            key={index}
-            index={index}
-            name={item.name}
-            image={item.image}
-            description={item.description}
-            builtWith={item.builtWith}
-            github={item.github}
-            live={item.live}
-          />
+          <Built key={index} index={index} {...item} />
         ))}
       </div>
     </div>

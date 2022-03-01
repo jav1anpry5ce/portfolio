@@ -115,13 +115,18 @@ export default function Header() {
               onClick={() => scrollTo(mainRef)}
             />
           </motion.div>
-          <div className="flex grow justify-end">
+          <motion.div
+            className="flex grow justify-end"
+            initial={{ opacity: 0, x: 200 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+          >
             <FaBars
               fontSize={30}
               className="text-white sm:hidden"
               onClick={() => setOpen(!open)}
             />
-          </div>
+          </motion.div>
           <div className="flex items-center space-x-4">
             <motion.div
               className="group hidden cursor-pointer items-center space-x-2 sm:flex"

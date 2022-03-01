@@ -27,7 +27,7 @@ export default function Contact() {
       <div className="mt-12 flex w-full items-center justify-center">
         <a
           href="mailto:javanpryce1@gmail.com"
-          className="cursor-pointer rounded px-8 py-3 text-muted ring-1 ring-muted transition duration-300 hover:bg-muted hover:text-white"
+          className="cursor-pointer rounded px-8 py-3 text-muted ring-1 ring-muted transition duration-300 hover:bg-muted/20 hover:text-white"
         >
           Hit Me Up
         </a>

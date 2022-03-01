@@ -88,7 +88,7 @@ export default function Header() {
               href="api/resume"
               download
               className="my-2 cursor-pointer self-start rounded bg-transparent 
-        px-4 py-2 text-muted ring-1 ring-muted transition duration-200 hover:bg-muted hover:text-gray-100 sm:block"
+        px-4 py-2 text-muted ring-1 ring-muted transition duration-200 hover:bg-muted/20 hover:text-gray-100 sm:block"
             >
               Resume
             </a>
@@ -163,7 +163,7 @@ export default function Header() {
               href="api/resume"
               download
               className="hidden cursor-pointer rounded bg-transparent px-4 py-2 
-        text-muted ring-1 ring-muted transition duration-200 hover:bg-muted hover:text-gray-100 sm:block"
+        text-muted ring-1 ring-muted transition duration-200 hover:bg-muted/20 hover:text-gray-100 sm:block"
               initial={{ opacity: 0, y: -200 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.7 }}

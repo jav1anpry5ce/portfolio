@@ -6,15 +6,7 @@ import { motion } from "framer-motion";
 
 export default function AboutMe() {
   const { aboutRef } = useContext(SimpleContext);
-  const list = {
-    visible: { opacity: 1 },
-    hidden: { opacity: 0 },
-  };
 
-  const item = {
-    visible: { opacity: 1, x: 0 },
-    hidden: { opacity: 0, x: -100 },
-  };
   return (
     <div
       className="mx-auto mb-20 max-w-4xl px-6 md:mb-80 md:px-2"
@@ -24,10 +16,10 @@ export default function AboutMe() {
         <span className="hidden text-muted sm:block">01.</span>
         <span className="font-semibold text-gray-100">About Me</span>
       </div>
-      <div className="flex w-full flex-col items-center md:flex-row md:items-start md:space-x-6">
+      <motion.div className="flex w-full flex-col items-center md:flex-row md:items-start md:space-x-6">
         <div className="flex max-w-lg grow flex-col items-center space-y-6 pr-4 text-base font-medium text-gray-400 md:items-start">
           <motion.p
-            initial={{ opacity: 0, x: -600 }}
+            initial={{ opacity: 0, x: -300 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
@@ -38,7 +30,7 @@ export default function AboutMe() {
             started in 2019 after starting university.
           </motion.p>
           <motion.p
-            initial={{ opacity: 0, x: 600 }}
+            initial={{ opacity: 0, x: 300 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
@@ -53,7 +45,7 @@ export default function AboutMe() {
             the vaccines.
           </motion.p>
           <motion.p
-            initial={{ opacity: 0, x: -600 }}
+            initial={{ opacity: 0, x: -300 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
@@ -63,7 +55,7 @@ export default function AboutMe() {
           </motion.p>
           <motion.ul
             className="flex list-inside list-disc space-x-16 md:space-x-32"
-            initial={{ opacity: 0, x: 600 }}
+            initial={{ opacity: 0, x: 300 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
@@ -95,7 +87,7 @@ export default function AboutMe() {
             height={350}
           />
         </motion.div>
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -26,9 +26,10 @@ export default function Header() {
   return (
     <motion.div
       className="sticky top-0 z-[9999]"
-      whileInView={{ opacity: [0, 1], scale: [0, 1] }}
-      viewport={{ once: true }}
-      transition={{ ease: "easeInOut" }}
+      // initial={{ opacity: 0, scale: 0 }}
+      // whileInView={{ opacity: [0, 1], scale: [0, 1] }}
+      // viewport={{ once: true }}
+      // transition={{ ease: "easeInOut" }}
     >
       <Transition
         show={open}
@@ -100,14 +101,20 @@ export default function Header() {
         } select-none`}
       >
         <div className="mx-auto flex w-full max-w-7xl items-center justify-between bg-background/60 py-2 px-2  backdrop-blur-lg">
-          <Image
-            src={logo}
-            alt="logo"
-            width={55}
-            height={55}
-            className="cursor-pointer rounded-full"
-            onClick={() => scrollTo(mainRef)}
-          />
+          <motion.div
+            initial={{ opacity: 0, x: -200 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+            <Image
+              src={logo}
+              alt="logo"
+              width={55}
+              height={55}
+              className="cursor-pointer rounded-full"
+              onClick={() => scrollTo(mainRef)}
+            />
+          </motion.div>
           <div className="flex grow justify-end">
             <FaBars
               fontSize={30}
@@ -116,41 +123,53 @@ export default function Header() {
             />
           </div>
           <div className="flex items-center space-x-4">
-            <div
+            <motion.div
               className="group hidden cursor-pointer items-center space-x-2 sm:flex"
               onClick={() => scrollTo(aboutRef)}
+              initial={{ opacity: 0, y: -200 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
             >
               <span className="text-muted">01.</span>
               <span className="text-gray-100 underline-offset-2 group-hover:underline">
                 About
               </span>
-            </div>
-            <div
+            </motion.div>
+            <motion.div
               className="group hidden cursor-pointer items-center space-x-2 sm:flex"
               onClick={() => scrollTo(workRef)}
+              initial={{ opacity: 0, y: -200 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.7 }}
             >
               <span className="text-muted">02.</span>
               <span className="text-gray-100 underline-offset-2 group-hover:underline">
                 Work
               </span>
-            </div>
-            <div
+            </motion.div>
+            <motion.div
               className="group hidden cursor-pointer items-center space-x-2 sm:flex "
               onClick={() => scrollTo(contactRef)}
+              initial={{ opacity: 0, y: -200 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.7 }}
             >
               <span className="text-muted">03.</span>
               <span className="text-gray-100 underline-offset-2 group-hover:underline">
                 Contact
               </span>
-            </div>
-            <a
+            </motion.div>
+            <motion.a
               href="api/resume"
               download
               className="hidden cursor-pointer rounded bg-transparent px-4 py-2 
         text-muted ring-1 ring-muted transition duration-200 hover:bg-muted hover:text-gray-100 sm:block"
+              initial={{ opacity: 0, y: -200 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.7 }}
             >
               Resume
-            </a>
+            </motion.a>
           </div>
         </div>
       </div>

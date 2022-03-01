@@ -6,8 +6,10 @@ export default function FindMe() {
   return (
     <motion.div
       className="fixed left-16 bottom-20 hidden px-2 md:block"
-      whileInView={{ opacity: [0, 1], scale: [0, 1.2, 1] }}
+      initial={{ opacity: 0, scale: 0 }}
+      whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
       viewport={{ once: true }}
+      transition={{ duration: 1 }}
     >
       <div className="flex flex-col space-y-5">
         <a

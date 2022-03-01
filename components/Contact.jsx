@@ -8,8 +8,10 @@ export default function Contact() {
     <motion.div
       className="mx-auto mb-48 max-w-4xl"
       ref={contactRef}
-      whileInView={{ opacity: [0, 1], scale: [0, 1.2, 1] }}
+      initial={{ opacity: 0, scale: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
+      transition={{ duration: 1 }}
     >
       <div className="mb-8 flex justify-center text-xl md:mb-12 md:space-x-3">
         <span className="hidden text-muted sm:block">03.</span>

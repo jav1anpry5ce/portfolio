@@ -6,6 +6,15 @@ import { motion } from "framer-motion";
 
 export default function AboutMe() {
   const { aboutRef } = useContext(SimpleContext);
+  const list = {
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 },
+  };
+
+  const item = {
+    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, x: -100 },
+  };
   return (
     <div
       className="mx-auto mb-20 max-w-4xl px-6 md:mb-80 md:px-2"
@@ -17,13 +26,23 @@ export default function AboutMe() {
       </div>
       <div className="flex w-full flex-col items-center md:flex-row md:items-start md:space-x-6">
         <div className="flex max-w-lg grow flex-col items-center space-y-6 pr-4 text-base font-medium text-gray-400 md:items-start">
-          <motion.p whileInView={{ x: [-600, 0] }} viewport={{ once: true }}>
+          <motion.p
+            initial={{ opacity: 0, x: -600 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+          >
             Hello! My name is Javaughn Pryce I am a final year student at the
             University of the Commonwealth Caribbean. You can always find me at
             my computer working on new ideas. My interest in web development
             started in 2019 after starting university.
           </motion.p>
-          <motion.p whileInView={{ x: [600, 0] }} viewport={{ once: true }}>
+          <motion.p
+            initial={{ opacity: 0, x: 600 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+          >
             Fast-forward to today, I&apos;ve had the pleasure of working on some
             very exciting projects. One of my favorite projects was building a
             virtual meeting room using Three JS along with React and Node JS. I
@@ -33,14 +52,21 @@ export default function AboutMe() {
             pandemic. The system was also designed to manage the inventory of
             the vaccines.
           </motion.p>
-          <motion.p whileInView={{ x: [-600, 0] }} viewport={{ once: true }}>
+          <motion.p
+            initial={{ opacity: 0, x: -600 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+          >
             Here are a few of the technologies I&apos;ve been working with
             recently:
           </motion.p>
           <motion.ul
             className="flex list-inside list-disc space-x-16 md:space-x-32"
-            whileInView={{ x: [600, 0] }}
+            initial={{ opacity: 0, x: 600 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 1 }}
           >
             <div className="flex flex-col space-y-1">
               <li>JavaScript (ES7)</li>
@@ -56,8 +82,10 @@ export default function AboutMe() {
         </div>
         <motion.div
           className="mt-4 flex items-center justify-center px-4 md:mt-0 md:block"
-          whileInView={{ opacity: [0, 1], scale: [0, 1] }}
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.2 }}
         >
           <Image
             src={me}

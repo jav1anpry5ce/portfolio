@@ -17,8 +17,10 @@ export default function Built({
       <div className="flex w-full flex-col justify-between px-2 md:flex-row md:px-0">
         <motion.div
           className="order-last my-2 grow md:my-0 md:block"
-          whileInView={{ scale: [0, 1.2, 1] }}
+          initial={{ opacity: 0, x: -600 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 1 }}
         >
           <Image
             src={image}
@@ -30,8 +32,10 @@ export default function Built({
         </motion.div>
         <motion.div
           className="md:max-w-sm"
-          whileInView={{ opacity: [0, 1] }}
+          initial={{ opacity: 0, x: 600 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 1 }}
         >
           <div className="mb-6 text-left">
             <p className="font-medium text-muted">Featured Project</p>
@@ -72,8 +76,10 @@ export default function Built({
       <div className="flex w-full flex-col justify-between px-2 md:flex-row md:px-0">
         <motion.div
           className="order-last my-2 grow md:order-first md:my-0"
-          whileInView={{ scale: [0, 1.2, 1] }}
+          initial={{ opacity: 0, x: 600 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 1 }}
         >
           <Image
             src={image}
@@ -85,8 +91,10 @@ export default function Built({
         </motion.div>
         <motion.div
           className="md:max-w-sm"
-          whileInView={{ opacity: [0, 1] }}
+          initial={{ opacity: 0, x: -600 }}
+          whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 1 }}
         >
           <div className="mb-6 text-right">
             <p className="font-medium text-muted">Featured Project</p>

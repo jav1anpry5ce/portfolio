@@ -7,7 +7,7 @@ export default function Main() {
   return (
     <motion.div
       initial={{ opacity: 0, x: -300 }}
-      animate={{ opacity: 1, x: 0 }}
+      whileInView={{ opacity: 1, x: 0 }}
       transition={{ ease: "easeInOut", duration: 1 }}
       className="mx-auto mb-20 flex min-h-[calc(100vh-71px)] max-w-4xl flex-1 flex-col justify-center px-4 sm:px-2"
       ref={mainRef}

@@ -8,12 +8,14 @@ export default function Main() {
     <motion.div
       className="mx-auto mb-20 flex min-h-[calc(100vh-71px)] max-w-4xl flex-1 flex-col justify-center px-4 sm:px-2"
       ref={mainRef}
-      initial={{ opacity: 0, x: -300 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ ease: "easeInOut", duration: 1 }}
-      viewport={{ once: true }}
     >
-      <div className="space-y-5">
+      <motion.div
+        className="space-y-5"
+        initial={{ opacity: 0, x: -300 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ ease: "easeInOut", duration: 1 }}
+        viewport={{ once: true }}
+      >
         <p className="text-lg text-secondary">Hi, my name is</p>
         <h1 className="text-6xl font-bold text-gray-50 md:text-7xl">
           Javaughn Pryce.
@@ -26,7 +28,7 @@ export default function Main() {
           React, Node js and Django. I also have experience with mobile app
           development using React Native.
         </p>
-      </div>
+      </motion.div>
     </motion.div>
   );
 }

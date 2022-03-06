@@ -12,7 +12,7 @@ export default function Built({
   live,
   index,
 }) {
-  if (index === 1) {
+  if (index % 2 === 0) {
     return (
       <div className="flex w-full flex-col justify-between px-2 md:flex-row md:px-0">
         <motion.div

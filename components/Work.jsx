@@ -11,7 +11,7 @@ const data = [
     image: ERMS,
     description:
       "This system was designed for managing epidemics/pandemics such as COVID. The main function of the system was to aid in speeding up the registrations process for testing and vaccination for Jamaican citizens.",
-    builtWith: ["Django", "React", "Tailwindcss"],
+    builtWith: ["Django", "React", "Tailwindcss", "Redux"],
     github: "https://github.com/jav1anpry5ce/epidemic_management_system",
     live: "https://epidemic-management-system.vercel.app",
   },

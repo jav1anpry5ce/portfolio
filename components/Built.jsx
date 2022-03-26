@@ -47,11 +47,9 @@ export default function Built({
           <div className="text-left text-gray-200 md:hidden">
             <p>{description}</p>
           </div>
-          <div className="mt-4 flex w-full flex-wrap text-left text-gray-400">
+          <div className="mt-4 flex w-full flex-wrap gap-x-2 text-left text-gray-400">
             {builtWith.map((name, index) => (
-              <p key={index} className="mr-3">
-                {name}
-              </p>
+              <p key={index}>{name}</p>
             ))}
           </div>
           <div className="mt-6 flex justify-start space-x-4">
@@ -96,17 +94,17 @@ export default function Built({
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <div className="mb-6 text-right">
+          <div className="mb-6 sm:text-right">
             <p className="font-medium text-muted">Featured Project</p>
             <h4 className="text-lg font-semibold text-gray-300">{name}</h4>
           </div>
           <div className="hidden w-[30rem] -translate-x-24 rounded bg-[#075264]/90 px-4 py-1 text-gray-200 md:block">
-            <p className="text-right">{description}</p>
+            <p className="text-left">{description}</p>
           </div>
-          <div className="text-right text-gray-200 md:hidden">
+          <div className="text-gray-200 sm:text-right md:hidden">
             <p>{description}</p>
           </div>
-          <div className="mt-4 flex w-full flex-wrap justify-end space-x-4 text-right text-gray-400">
+          <div className="mt-4 flex w-full flex-wrap gap-x-2 text-right text-gray-400 sm:justify-end">
             {builtWith.map((name, index) => (
               <p key={index}>{name}</p>
             ))}

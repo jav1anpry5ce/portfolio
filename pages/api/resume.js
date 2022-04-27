@@ -1,20 +1,16 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import stream from "stream";
 import { promisify } from "util";
-import fetch from "node-fetch";
+import fs from "fs";
+import path from "path";
 
-const pipeline = promisify(stream.pipeline);
-const url = "http://javaughnpryce.live:5001/Javaughn_Pryce_Resume.pdf";
+const filePath = path.resolve(
+  __dirname,
+  "../../../../public/Javaughn_Pryce_Resume.pdf"
+);
+const buffer = fs.readFileSync(filePath);
 
 export default async function handler(req, res) {
-  const response = await fetch(url); // replace this with your API call & options
-  if (!response.ok)
-    throw new Error(`unexpected response ${response.statusText}`);
-
   res.setHeader("Content-Type", "application/pdf");
-  res.setHeader(
-    "Content-Disposition",
-    "attachment; filename=Javaughn_Pryce_Resume.pdf"
-  );
-  await pipeline(response.body, res);
+  res.send(buffer);
 }

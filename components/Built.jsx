@@ -16,7 +16,7 @@ export default function Built({
     return (
       <div className="flex w-full flex-col justify-between px-2 md:flex-row md:px-0">
         <motion.div
-          className="order-last my-2 grow md:my-0 md:block"
+          className="order-last my-2 hidden grow md:my-0 md:block"
           initial={{ opacity: 0, x: -300 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -47,6 +47,21 @@ export default function Built({
           <div className="text-left text-gray-200 md:hidden">
             <p>{description}</p>
           </div>
+          <motion.div
+            className="pt-5 md:hidden"
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+          >
+            <Image
+              src={image}
+              alt="ERMS"
+              width={550}
+              height={350}
+              className="aspect-square rounded object-fill object-center"
+            />
+          </motion.div>
           <div className="mt-4 flex w-full flex-wrap gap-x-2 text-left text-gray-400">
             {builtWith.map((name, index) => (
               <p key={index}>{name}</p>
@@ -73,7 +88,7 @@ export default function Built({
     return (
       <div className="flex w-full flex-col justify-between px-2 md:flex-row md:px-0">
         <motion.div
-          className="order-last my-2 grow md:order-first md:my-0"
+          className="order-last my-2 hidden grow md:order-first md:my-0 md:block"
           initial={{ opacity: 0, x: 300 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -104,12 +119,27 @@ export default function Built({
           <div className="text-gray-200 sm:text-right md:hidden">
             <p>{description}</p>
           </div>
+          <motion.div
+            className="pt-5 md:hidden"
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+          >
+            <Image
+              src={image}
+              alt="ERMS"
+              width={550}
+              height={350}
+              className="aspect-square rounded object-fill object-center"
+            />
+          </motion.div>
           <div className="mt-4 flex w-full flex-wrap gap-x-2 text-right text-gray-400 sm:justify-end">
             {builtWith.map((name, index) => (
               <p key={index}>{name}</p>
             ))}
           </div>
-          <div className="mt-6 flex justify-end space-x-4">
+          <div className="mt-6 flex space-x-4 md:justify-end">
             <a href={github} target="_blank" rel="noreferrer">
               <AiFillGithub
                 fontSize={30}

@@ -61,21 +61,21 @@ function BuildCard({ title, description, stack, link }) {
 
 export default function Other() {
   return (
-    <motion.div
-      initial={{ y: "100vh" }}
-      whileInView={{ y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 1 }}
-      className="mx-auto -mt-32 mb-40 max-w-4xl md:mb-80"
-    >
+    <div className="mx-auto -mt-32 mb-40 max-w-4xl md:mb-80">
       <h1 className="my-12 text-center text-3xl font-medium text-gray-100">
         Other Noteworthy Projects
       </h1>
-      <div className="grid grid-cols-1 justify-items-center gap-y-5 px-2 lg:grid-cols-2 lg:px-0">
+      <motion.div
+        initial={{ opacity: 0, x: -300 }}
+        whileInView={{ opacity: 1, x: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        className="grid grid-cols-1 justify-items-center gap-y-5 px-2 lg:grid-cols-2 lg:px-0"
+      >
         {data.map((item, index) => (
           <BuildCard key={index} {...item} />
         ))}
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 }

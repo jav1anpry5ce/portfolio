@@ -67,16 +67,22 @@ export default function Other() {
       <h1 className="my-12 text-center text-3xl font-medium text-gray-100">
         Other Noteworthy Projects
       </h1>
-      <motion.ul className="grid grid-cols-1 justify-items-center gap-y-5 px-2 lg:grid-cols-2 lg:px-0">
+      <motion.ul
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delayChildren: 1, staggerChildren: 0.5 }}
+        viewport={{ once: true }}
+        className="grid grid-cols-1 justify-items-center gap-y-5 px-2 lg:grid-cols-2 lg:px-0"
+      >
         {data.map((item, index) => (
           <motion.li
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 * index }}
+            transition={{ duration: 0.4, delay: 0.2 * index }}
             key={index}
           >
-            <BuildCard key={index} {...item} />
+            <BuildCard {...item} />
           </motion.li>
         ))}
       </motion.ul>

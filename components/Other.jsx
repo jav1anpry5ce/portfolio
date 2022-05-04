@@ -38,11 +38,13 @@ function BuildCard({ title, description, stack, link }) {
   return (
     <a
       href={link}
+      target="_blank"
+      rel="noreferrer"
       className="flex max-w-[27rem] cursor-pointer flex-col justify-between gap-5 rounded bg-[#075264] p-6 transition duration-200 hover:-translate-y-2"
     >
       <div className="flex items-center justify-between">
         <BsFolder2Open fontSize={30} className="text-muted" />
-        <a href={link}>
+        <a href={link} target="_blank" rel="noreferrer">
           <FiGithub fontSize={25} className="text-gray-100 hover:text-muted" />
         </a>
       </div>

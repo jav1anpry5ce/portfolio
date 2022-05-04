@@ -40,7 +40,7 @@ function BuildCard({ title, description, stack, link }) {
       href={link}
       target="_blank"
       rel="noreferrer"
-      className="flex max-w-[27rem] cursor-pointer flex-col justify-between gap-5 rounded bg-[#075264] p-6 transition duration-200 hover:-translate-y-2"
+      className="flex h-[250px] max-w-[27rem] cursor-pointer flex-col justify-between gap-5 rounded bg-[#075264] p-6 transition duration-200 hover:-translate-y-2"
     >
       <div className="flex items-center justify-between">
         <BsFolder2Open fontSize={30} className="text-muted" />
@@ -67,17 +67,19 @@ export default function Other() {
       <h1 className="my-12 text-center text-3xl font-medium text-gray-100">
         Other Noteworthy Projects
       </h1>
-      <motion.div
-        initial={{ opacity: 0, x: -300 }}
-        whileInView={{ opacity: 1, x: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1 }}
-        className="grid grid-cols-1 justify-items-center gap-y-5 px-2 lg:grid-cols-2 lg:px-0"
-      >
+      <motion.ul className="grid grid-cols-1 justify-items-center gap-y-5 px-2 lg:grid-cols-2 lg:px-0">
         {data.map((item, index) => (
-          <BuildCard key={index} {...item} />
+          <motion.li
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 * index }}
+            key={index}
+          >
+            <BuildCard key={index} {...item} />
+          </motion.li>
         ))}
-      </motion.div>
+      </motion.ul>
     </div>
   );
 }

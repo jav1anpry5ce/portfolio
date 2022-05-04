@@ -70,7 +70,7 @@ export default function Other() {
       <motion.ul
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ delayChildren: 1, staggerChildren: 0.5 }}
+        transition={{ staggerChildren: 0.5 }}
         viewport={{ once: true }}
         className="grid grid-cols-1 justify-items-center gap-y-5 px-2 lg:grid-cols-2 lg:px-0"
       >

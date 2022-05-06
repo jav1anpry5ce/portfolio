@@ -40,7 +40,7 @@ function BuildCard({ title, description, stack, link }) {
       href={link}
       target="_blank"
       rel="noreferrer"
-      className="flex h-[250px] max-w-[27rem] cursor-pointer flex-col justify-between gap-5 rounded bg-[#075264] p-6 transition duration-200 hover:-translate-y-2"
+      className="flex min-h-[250px] max-w-[27rem] cursor-pointer flex-col justify-between gap-5 rounded bg-[#075264] p-6 transition duration-200 hover:-translate-y-2"
     >
       <div className="flex items-center justify-between">
         <BsFolder2Open fontSize={30} className="text-muted" />

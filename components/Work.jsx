@@ -29,7 +29,7 @@ const data = [
     image: chat,
     description: "Whatsapp like chat application.",
     builtWith: ["React", "Node JS", "Socket.io", "Tailwindcss"],
-    github: "https://github.com/jav1anpry5ce/chat-app",
+    github: "https://github.com/jav1anpry5ce/React-Chat-App",
     live: "https://chat.javaughnpryce.live",
   },
 ];

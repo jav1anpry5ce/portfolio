@@ -21,9 +21,6 @@ export default function Header() {
         setShadow(false);
       }
     });
-    return () => {
-      window.removeEventListener("scroll");
-    };
   }, []);
 
   return (

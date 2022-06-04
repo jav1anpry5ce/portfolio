@@ -47,7 +47,7 @@ export default function Built({
           <div className="text-left text-gray-200 md:hidden">
             <p>{description}</p>
           </div>
-          <motion.div
+          <div
             className="pt-5 md:hidden"
             //initial={{ opacity: 0, scale: 0 }}
             //whileInView={{ opacity: 1, scale: 1 }}
@@ -61,7 +61,7 @@ export default function Built({
               height={350}
               className="aspect-square rounded object-fill object-center"
             />
-          </motion.div>
+          </div>
           <div className="mt-4 flex w-full flex-wrap gap-x-2 text-left text-gray-400">
             {builtWith.map((name, index) => (
               <p key={index}>{name}</p>
@@ -129,7 +129,7 @@ export default function Built({
           <div className="text-gray-200 sm:text-right md:hidden">
             <p>{description}</p>
           </div>
-          <motion.div
+          <div
             className="pt-5 md:hidden"
             //initial={{ opacity: 0, scale: 0 }}
             //whileInView={{ opacity: 1, scale: 1 }}
@@ -143,7 +143,7 @@ export default function Built({
               height={350}
               className="aspect-square rounded object-fill object-center"
             />
-          </motion.div>
+          </div>
           <div className="mt-4 flex w-full flex-wrap gap-x-2 text-right text-gray-400 sm:justify-end">
             {builtWith.map((name, index) => (
               <p key={index}>{name}</p>

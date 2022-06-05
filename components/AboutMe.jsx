@@ -19,6 +19,7 @@ export default function AboutMe() {
       <div className="flex w-full flex-col items-center md:flex-row md:items-start md:space-x-6">
         <div className="flex max-w-lg grow flex-col items-center space-y-6 pr-4 text-base font-medium text-gray-400 md:items-start">
           <motion.div
+className="space-y-6"
            initial={{ opacity: 0, x: -300 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}

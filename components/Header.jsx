@@ -116,7 +116,7 @@ export default function Header() {
               onClick={() => setOpen(!open)}
             />
           </li>
-          <ul className="flex items-center space-x-4">
+          <motion.ul className="flex items-center space-x-4">
             <motion.li
               className="group hidden cursor-pointer items-center space-x-2 sm:flex"
               onClick={() => scrollTo(aboutRef)}
@@ -167,7 +167,7 @@ export default function Header() {
                 Resume
               </a>
             </motion.li>
-          </ul>
+          </motion.ul>
         </ul>
       </div>
     </div>

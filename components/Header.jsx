@@ -156,7 +156,7 @@ export default function Header() {
             <motion.li
               initial={{ opacity: 0, y: -200 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.7 }}
+              transition={{ delay: 0.6, duration: 0.7 }}
             >
               <a
                 href="api/resume"

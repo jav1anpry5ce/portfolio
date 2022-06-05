@@ -24,12 +24,8 @@ export default function Header() {
   }, []);
 
   return (
-    <motion.div
+    <div
       className="sticky top-0 z-[9999]"
-      // initial={{ opacity: 0, scale: 0 }}
-      // whileInView={{ opacity: [0, 1], scale: [0, 1] }}
-      // viewport={{ once: true }}
-      // transition={{ ease: "easeInOut" }}
     >
       <Transition
         show={open}
@@ -173,6 +169,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }

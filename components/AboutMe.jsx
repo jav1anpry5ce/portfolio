@@ -16,23 +16,24 @@ export default function AboutMe() {
         <span className="hidden text-muted sm:block">01.</span>
         <span className="font-semibold text-gray-100">About Me</span>
       </div>
-      <div className="flex w-full flex-col items-center md:flex-row md:items-start md:space-x-6">
+      <motion.div className="flex w-full flex-col items-center md:flex-row md:items-start md:space-x-6">
         <div className="flex max-w-lg grow flex-col items-center space-y-6 pr-4 text-base font-medium text-gray-400 md:items-start">
-          <motion.div
-className="space-y-6"
-           initial={{ opacity: 0, x: -300 }}
+          <motion.p
+            initial={{ opacity: 0, x: -300 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1 }}>
-
-          <p
+            transition={{ duration: 1 }}
           >
             Hello! My name is Javaughn Pryce I am a final year student at the
             University of the Commonwealth Caribbean. You can always find me at
             my computer working on new ideas. My interest in web development
             started in 2019 after starting university.
-          </p>
-          <p
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, x: 300 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
           >
             Fast-forward to today, I&apos;ve had the pleasure of working on some
             very exciting projects. One of my favorite projects was building a
@@ -42,13 +43,16 @@ className="space-y-6"
             the registration process for vaccination and testing of the COVID 19
             pandemic. The system was also designed to manage the inventory of
             the vaccines.
-          </p>
-          <p
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, x: -300 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
           >
             Here are a few of the technologies I&apos;ve been working with
             recently:
-          </p>
-          </motion.div>
+          </motion.p>
           <motion.ul
             className="flex list-inside list-disc space-x-16 md:space-x-32"
             initial={{ opacity: 0, x: 300 }}
@@ -83,7 +87,7 @@ className="space-y-6"
             height={350}
           />
         </motion.div>
-      </div>
+      </motion.div>
     </div>
   );
 }

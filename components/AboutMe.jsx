@@ -22,7 +22,7 @@ export default function AboutMe() {
             initial={{ opacity: 0, x: -300 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.5 }}
           >
             Hello! My name is Javaughn Pryce I am a final year student at the
             University of the Commonwealth Caribbean. You can always find me at
@@ -33,7 +33,7 @@ export default function AboutMe() {
             initial={{ opacity: 0, x: 300 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.5 }}
           >
             Fast-forward to today, I&apos;ve had the pleasure of working on some
             very exciting projects. One of my favorite projects was building a
@@ -48,7 +48,7 @@ export default function AboutMe() {
             initial={{ opacity: 0, x: -300 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.5 }}
           >
             Here are a few of the technologies I&apos;ve been working with
             recently:
@@ -58,7 +58,7 @@ export default function AboutMe() {
             initial={{ opacity: 0, x: 300 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.5 }}
           >
             <div className="flex flex-col space-y-1">
               <li>JavaScript (ES7)</li>
@@ -77,7 +77,7 @@ export default function AboutMe() {
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 1, delay: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           <Image
             src={me}

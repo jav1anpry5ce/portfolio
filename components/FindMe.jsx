@@ -9,7 +9,7 @@ export default function FindMe() {
       initial={{ opacity: 0, scale: 0 }}
       whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
       viewport={{ once: true }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.5 }}
     >
       <div className="flex flex-col space-y-5">
         <a

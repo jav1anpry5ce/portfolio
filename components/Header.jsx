@@ -98,7 +98,7 @@ export default function Header() {
           <motion.li
             initial={{ opacity: 0, x: -200 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: 0.5 }}
           >
             <Image
               src={logo}
@@ -122,7 +122,7 @@ export default function Header() {
               onClick={() => scrollTo(aboutRef)}
               initial={{ opacity: 0, y: -200 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
+              transition={{ duration: 0.5 }}
             >
               <span className="text-muted">01.</span>
               <span className="text-gray-100 underline-offset-2 group-hover:underline">
@@ -134,7 +134,7 @@ export default function Header() {
               onClick={() => scrollTo(workRef)}
               initial={{ opacity: 0, y: -200 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.7 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
             >
               <span className="text-muted">02.</span>
               <span className="text-gray-100 underline-offset-2 group-hover:underline">
@@ -146,7 +146,7 @@ export default function Header() {
               onClick={() => scrollTo(contactRef)}
               initial={{ opacity: 0, y: -200 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.7 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
             >
               <span className="text-muted">03.</span>
               <span className="text-gray-100 underline-offset-2 group-hover:underline">
@@ -156,7 +156,7 @@ export default function Header() {
             <motion.li
               initial={{ opacity: 0, y: -200 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.7 }}
+              transition={{ delay: 0.6, duration: 0.5 }}
             >
               <a
                 href="api/resume"

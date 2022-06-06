@@ -13,7 +13,7 @@ export default function Main() {
         className="space-y-5"
         initial={{ opacity: 0, x: -300 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ ease: "easeInOut", duration: 1 }}
+        transition={{ ease: "easeInOut", duration: 0.5 }}
         viewport={{ once: true }}
       >
         <p className="text-lg text-secondary">Hi, my name is</p>

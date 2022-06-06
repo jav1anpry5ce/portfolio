@@ -79,7 +79,7 @@ export default function Other() {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: 0.2 * index }}
+            transition={{ duration: 0.5, delay: 0.2 * index }}
             key={index}
           >
             <BuildCard {...item} />

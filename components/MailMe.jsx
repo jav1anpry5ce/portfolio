@@ -8,7 +8,7 @@ export default function MailMe() {
       initial={{ opacity: 0, scale: 0 }}
       whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
       viewport={{ once: true }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.5 }}
     >
       <a
         href="mailto:javanpryce1@gmail.com"

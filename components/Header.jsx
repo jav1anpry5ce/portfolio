@@ -91,7 +91,7 @@ export default function Header() {
       </Transition>
       <div
         className={`w-full bg-background/60 ${
-          shadow && "shadow-lg"
+          shadow && "shadow"
         } select-none`}
       >
         <ul className="mx-auto flex w-full max-w-7xl items-center justify-between bg-background/60 py-2 px-2  backdrop-blur-lg">

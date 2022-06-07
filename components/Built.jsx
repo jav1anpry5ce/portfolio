@@ -66,23 +66,23 @@ export default function Built({
           <div className="mt-6 flex justify-start space-x-4">
             <a href={github} target="_blank" rel="noreferrer">
               <div className="group flex items-center gap-2 rounded bg-muted/80 px-4 py-1">
-                <p className="font-medium text-gray-900 transition duration-300 group-hover:text-white">
+                <p className="font-medium text-gray-300 transition duration-300 group-hover:text-white">
                   Source Code
                 </p>
                 <AiFillGithub
                   fontSize={30}
-                  className="cursor-pointer text-gray-900 transition duration-300 group-hover:text-white"
+                  className="cursor-pointer text-gray-300 transition duration-300 group-hover:text-white"
                 />
               </div>
             </a>
             <a href={live} target="_blank" rel="noreferrer">
               <div className="group flex items-center gap-2 rounded bg-muted/80 px-4 py-1">
-                <p className="font-medium text-gray-900 transition duration-300 group-hover:text-white">
+                <p className="font-medium text-gray-300 transition duration-300 group-hover:text-white">
                   Live View
                 </p>
                 <AiOutlineEye
                   fontSize={30}
-                  className="cursor-pointer text-gray-900 transition duration-300 group-hover:text-white"
+                  className="cursor-pointer text-gray-300 transition duration-300 group-hover:text-white"
                 />
               </div>
             </a>
@@ -144,23 +144,23 @@ export default function Built({
           <div className="mt-6 flex space-x-4 md:justify-end">
             <a href={github} target="_blank" rel="noreferrer">
               <div className="group flex items-center gap-2 rounded bg-muted/80 px-4 py-1">
-                <p className="font-medium text-gray-900 transition duration-300 group-hover:text-white">
+                <p className="font-medium text-gray-300 transition duration-300 group-hover:text-white">
                   Source Code
                 </p>
                 <AiFillGithub
                   fontSize={30}
-                  className="cursor-pointer text-gray-900 transition duration-300 group-hover:text-white"
+                  className="cursor-pointer text-gray-300 transition duration-300 group-hover:text-white"
                 />
               </div>
             </a>
             <a href={live} target="_blank" rel="noreferrer">
               <div className="group flex items-center gap-2 rounded bg-muted/80 px-4 py-1">
-                <p className="font-medium text-gray-900 transition duration-300 group-hover:text-white">
+                <p className="font-medium text-gray-300 transition duration-300 group-hover:text-white">
                   Live View
                 </p>
                 <AiOutlineEye
                   fontSize={30}
-                  className="cursor-pointer text-gray-900 transition duration-300 group-hover:text-white"
+                  className="cursor-pointer text-gray-300 transition duration-300 group-hover:text-white"
                 />
               </div>
             </a>

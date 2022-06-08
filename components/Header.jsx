@@ -78,8 +78,8 @@ export default function Header() {
           </div>
         </div>
       </Transition>
-      <div className="w-full select-none overflow-x-hidden bg-background/50 shadow-2xl shadow-background backdrop-blur-lg">
-        <div className="mx-auto flex w-full max-w-7xl items-center justify-between bg-background/50 p-2">
+      <div className="w-full select-none overflow-x-hidden bg-background/70 shadow-2xl shadow-background backdrop-blur-lg">
+        <div className="mx-auto flex w-full max-w-7xl items-center justify-between p-2">
           <motion.a
             href="#main"
             initial={{ opacity: 0, x: -200 }}

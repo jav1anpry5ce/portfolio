@@ -31,7 +31,8 @@ export default function Header() {
               className="text-white sm:hidden"
               onClick={() => setOpen(!open)}
             />
-            <div
+            <a
+              href="#about"
               className="group my-2 mt-12 flex w-full cursor-pointer items-start space-x-2 text-xl"
               onClick={() => {
                 scrollTo(aboutRef);
@@ -42,8 +43,9 @@ export default function Header() {
               <span className="text-gray-100 underline-offset-2 group-hover:underline">
                 About
               </span>
-            </div>
-            <div
+            </a>
+            <a
+              href="#work"
               className="group my-2 flex w-full cursor-pointer items-start space-x-2 text-xl"
               onClick={() => {
                 scrollTo(workRef);
@@ -54,8 +56,9 @@ export default function Header() {
               <span className="text-gray-100 underline-offset-2 group-hover:underline">
                 Work
               </span>
-            </div>
-            <div
+            </a>
+            <a
+              href="#contact"
               className="group my-2 flex w-full cursor-pointer items-start space-x-2 text-xl"
               onClick={() => {
                 scrollTo(contactRef);
@@ -66,7 +69,7 @@ export default function Header() {
               <span className="text-gray-100 underline-offset-2 group-hover:underline">
                 Contact
               </span>
-            </div>
+            </a>
             <a
               href="api/resume"
               download

@@ -20,7 +20,7 @@ export default function Built({
           initial={{ opacity: 0, x: -300 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.35 }}
+          transition={{ duration: 0.5 }}
         >
           <Image
             src={image}
@@ -35,7 +35,7 @@ export default function Built({
           initial={{ opacity: 0, x: 300 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.35 }}
+          transition={{ duration: 0.5 }}
         >
           <div className="mb-6 text-left">
             <p className="font-medium text-muted">Featured Project</p>
@@ -96,7 +96,7 @@ export default function Built({
           initial={{ opacity: 0, x: 300 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.35 }}
+          transition={{ duration: 0.5 }}
         >
           <Image
             src={image}
@@ -111,7 +111,7 @@ export default function Built({
           initial={{ opacity: 0, x: -300 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.35 }}
+          transition={{ duration: 0.5 }}
         >
           <div className="mb-6 md:text-right">
             <p className="font-medium text-muted">Featured Project</p>

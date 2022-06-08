@@ -21,26 +21,16 @@ export default function AboutMe() {
         initial={{ opacity: 0, x: -300 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.35 }}
+        transition={{ duration: 0.5 }}
       >
         <div className="flex max-w-lg grow flex-col items-center space-y-6 pr-4 text-base font-medium text-gray-400 md:items-start">
-          <p
-          // initial={{ opacity: 0, x: -300 }}
-          // whileInView={{ opacity: 1, x: 0 }}
-          // viewport={{ once: true }}
-          // transition={{ duration: 0.35 }}
-          >
+          <p>
             Hello! My name is Javaughn Pryce I am a final year student at the
             University of the Commonwealth Caribbean. You can always find me at
             my computer working on new ideas. My interest in web development
             started in 2019 after starting university.
           </p>
-          <p
-          // initial={{ opacity: 0, x: 300 }}
-          // whileInView={{ opacity: 1, x: 0 }}
-          // viewport={{ once: true }}
-          // transition={{ duration: 0.35 }}
-          >
+          <p>
             Fast-forward to today, I&apos;ve had the pleasure of working on some
             very exciting projects. One of my favorite projects was building a
             virtual meeting room using Three JS along with React and Node JS. I
@@ -50,22 +40,11 @@ export default function AboutMe() {
             pandemic. The system was also designed to manage the inventory of
             the vaccines.
           </p>
-          <p
-          // initial={{ opacity: 0, x: -300 }}
-          // whileInView={{ opacity: 1, x: 0 }}
-          // viewport={{ once: true }}
-          // transition={{ duration: 0.35 }}
-          >
+          <p>
             Here are a few of the technologies I&apos;ve been working with
             recently:
           </p>
-          <ul
-            className="flex list-inside list-disc space-x-16 md:space-x-32"
-            // initial={{ opacity: 0, x: 300 }}
-            // whileInView={{ opacity: 1, x: 0 }}
-            // viewport={{ once: true }}
-            // transition={{ duration: 0.35 }}
-          >
+          <ul className="flex list-inside list-disc space-x-16 md:space-x-32">
             <div className="flex flex-col space-y-1">
               <li>JavaScript (ES7)</li>
               <li>React</li>
@@ -83,7 +62,7 @@ export default function AboutMe() {
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.35, delay: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           <Image
             src={me}

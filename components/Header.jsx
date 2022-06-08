@@ -90,6 +90,7 @@ export default function Header() {
               alt="logo"
               width={55}
               height={55}
+              layout="fixed"
               className="cursor-pointer rounded-full"
               onClick={() => scrollTo(mainRef)}
             />

@@ -1,4 +1,5 @@
-import { createContext, useRef, useState } from "react";
+import { createContext, useRef, useEffect } from "react";
+import { useRouter } from "next/router";
 
 const SimpleContext = createContext();
 
@@ -7,6 +8,15 @@ const SimpleProvider = ({ children }) => {
   const aboutRef = useRef(null);
   const workRef = useRef(null);
   const contactRef = useRef(null);
+  const router = useRouter();
+
+  useEffect(() => {
+    const hash = router.asPath.split("/")[1];
+    if (hash === "#main") scrollTo(mainRef);
+    if (hash === "#about") scrollTo(aboutRef);
+    if (hash === "#work") scrollTo(workRef);
+    if (hash === "#contact") scrollTo(contactRef);
+  }, [router]);
 
   const scrollTo = (ref) => {
     const elementPosition = ref.current.getBoundingClientRect().top;

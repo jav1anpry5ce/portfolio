@@ -78,12 +78,15 @@ export default function Header() {
           </div>
         </div>
       </Transition>
-      <div className="w-full select-none bg-background/50 shadow-2xl shadow-background backdrop-blur-lg">
+      <div className="w-full select-none overflow-x-hidden bg-background/50 shadow-2xl shadow-background backdrop-blur-lg">
         <div className="mx-auto flex w-full max-w-7xl items-center justify-between bg-background/50 p-2">
-          <motion.div
+          <motion.a
+            href="#main"
             initial={{ opacity: 0, x: -200 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.35 }}
+            onClick={() => scrollTo(mainRef)}
+            tabIndex="1"
           >
             <Image
               src={logo}
@@ -92,9 +95,8 @@ export default function Header() {
               height={55}
               layout="fixed"
               className="cursor-pointer rounded-full"
-              onClick={() => scrollTo(mainRef)}
             />
-          </motion.div>
+          </motion.a>
           <div className="flex grow justify-end">
             <FaBars
               fontSize={30}
@@ -102,58 +104,62 @@ export default function Header() {
               onClick={() => setOpen(!open)}
             />
           </div>
-          <motion.ul className="flex items-center space-x-4">
-            <motion.li
+          <div className="flex items-center space-x-4">
+            <motion.a
+              href="#about"
               className="group hidden cursor-pointer items-center space-x-2 sm:flex"
               onClick={() => scrollTo(aboutRef)}
-              initial={{ opacity: 0, y: "-100vh" }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: "100vw" }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.35 }}
+              tabIndex="2"
             >
               <span className="text-muted">01.</span>
               <span className="text-gray-100 underline-offset-2 group-hover:underline">
                 About
               </span>
-            </motion.li>
-            <motion.li
+            </motion.a>
+            <motion.a
+              href="#work"
               className="group hidden cursor-pointer items-center space-x-2 sm:flex"
               onClick={() => scrollTo(workRef)}
-              initial={{ opacity: 0, y: "-100vh" }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: "100vw" }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2, duration: 0.35 }}
+              tabIndex="3"
             >
               <span className="text-muted">02.</span>
               <span className="text-gray-100 underline-offset-2 group-hover:underline">
                 Work
               </span>
-            </motion.li>
-            <motion.li
+            </motion.a>
+            <motion.a
+              href="#contact"
               className="group hidden cursor-pointer items-center space-x-2 sm:flex "
               onClick={() => scrollTo(contactRef)}
-              initial={{ opacity: 0, y: "-100vh" }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: "100vw" }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4, duration: 0.35 }}
+              tabIndex="4"
             >
               <span className="text-muted">03.</span>
               <span className="text-gray-100 underline-offset-2 group-hover:underline">
                 Contact
               </span>
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0, y: "-100vh" }}
-              animate={{ opacity: 1, y: 0 }}
+            </motion.a>
+            <motion.a
+              initial={{ opacity: 0, x: "100vw" }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.6, duration: 0.35 }}
-            >
-              <a
-                href="api/resume"
-                download
-                className="hidden cursor-pointer rounded bg-transparent px-4 py-2 
+              tabIndex="5"
+              href="api/resume"
+              download
+              className="hidden cursor-pointer rounded bg-transparent px-4 py-2 
         text-muted ring-1 ring-muted transition duration-200 hover:bg-muted/20 hover:text-gray-100 sm:block"
-              >
-                Resume
-              </a>
-            </motion.li>
-          </motion.ul>
+            >
+              Resume
+            </motion.a>
+          </div>
         </div>
       </div>
     </div>

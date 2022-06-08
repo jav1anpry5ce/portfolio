@@ -44,9 +44,7 @@ function BuildCard({ title, description, stack, link }) {
     >
       <div className="flex items-center justify-between">
         <BsFolder2Open fontSize={30} className="text-muted" />
-        <a href={link} target="_blank" rel="noreferrer">
-          <FiGithub fontSize={25} className="text-gray-100 hover:text-muted" />
-        </a>
+        <FiGithub fontSize={25} className="text-gray-100 hover:text-muted" />
       </div>
       <div className="space-y-2">
         <p className="text-2xl font-medium text-gray-100">{title}</p>

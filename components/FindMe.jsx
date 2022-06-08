@@ -16,6 +16,7 @@ export default function FindMe() {
           href="https://github.com/jav1anpry5ce"
           target="_blank"
           rel="noreferrer"
+          tabIndex="6"
         >
           <AiFillGithub
             alt="Github"
@@ -27,6 +28,7 @@ export default function FindMe() {
           href="https://www.linkedin.com/in/javaughn-pryce-9441b814a/"
           target="_blank"
           rel="noreferrer"
+          tabIndex="7"
         >
           <AiFillLinkedin
             alt="LinkedIn"

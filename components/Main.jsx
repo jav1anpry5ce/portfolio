@@ -13,14 +13,14 @@ export default function Main() {
         className="space-y-5"
         initial={{ opacity: 0, x: -300 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ ease: "easeInOut", duration: 0.75 }}
+        transition={{ ease: "easeInOut", duration: 0.35 }}
         viewport={{ once: true }}
       >
         <p className="text-lg text-secondary">Hi, my name is</p>
-        <h1 className="sm:gradient-text gradient pb-2 text-6xl font-bold text-gray-50 md:text-7xl">
+        <h1 className="sm:gradient-text pb-2 text-6xl font-bold text-gray-50 md:text-7xl">
           Javaughn Pryce.
         </h1>
-        <h2 className="sm:gradient-text gradient text-5xl font-semibold text-gray-400 md:text-6xl">
+        <h2 className="sm:gradient-text text-5xl font-semibold text-gray-400 md:text-6xl">
           I build full stack applications.
         </h2>
         <p className="max-w-lg text-xl text-gray-300">

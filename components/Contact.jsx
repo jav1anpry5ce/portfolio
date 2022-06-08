@@ -11,7 +11,7 @@ export default function Contact() {
       initial={{ opacity: 0, scale: 0 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.75 }}
+      transition={{ duration: 0.35 }}
     >
       <div className="mb-8 flex justify-center text-xl md:mb-12 md:space-x-3">
         <span className="hidden text-muted sm:block">03.</span>

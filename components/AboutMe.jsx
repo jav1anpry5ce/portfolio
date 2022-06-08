@@ -21,14 +21,14 @@ export default function AboutMe() {
         initial={{ opacity: 0, x: -300 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.75 }}
+        transition={{ duration: 0.35 }}
       >
         <div className="flex max-w-lg grow flex-col items-center space-y-6 pr-4 text-base font-medium text-gray-400 md:items-start">
           <p
           // initial={{ opacity: 0, x: -300 }}
           // whileInView={{ opacity: 1, x: 0 }}
           // viewport={{ once: true }}
-          // transition={{ duration: 0.75 }}
+          // transition={{ duration: 0.35 }}
           >
             Hello! My name is Javaughn Pryce I am a final year student at the
             University of the Commonwealth Caribbean. You can always find me at
@@ -39,7 +39,7 @@ export default function AboutMe() {
           // initial={{ opacity: 0, x: 300 }}
           // whileInView={{ opacity: 1, x: 0 }}
           // viewport={{ once: true }}
-          // transition={{ duration: 0.75 }}
+          // transition={{ duration: 0.35 }}
           >
             Fast-forward to today, I&apos;ve had the pleasure of working on some
             very exciting projects. One of my favorite projects was building a
@@ -54,7 +54,7 @@ export default function AboutMe() {
           // initial={{ opacity: 0, x: -300 }}
           // whileInView={{ opacity: 1, x: 0 }}
           // viewport={{ once: true }}
-          // transition={{ duration: 0.75 }}
+          // transition={{ duration: 0.35 }}
           >
             Here are a few of the technologies I&apos;ve been working with
             recently:
@@ -64,7 +64,7 @@ export default function AboutMe() {
             // initial={{ opacity: 0, x: 300 }}
             // whileInView={{ opacity: 1, x: 0 }}
             // viewport={{ once: true }}
-            // transition={{ duration: 0.75 }}
+            // transition={{ duration: 0.35 }}
           >
             <div className="flex flex-col space-y-1">
               <li>JavaScript (ES7)</li>
@@ -83,7 +83,7 @@ export default function AboutMe() {
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.75, delay: 0.2 }}
+          transition={{ duration: 0.35, delay: 0.2 }}
         >
           <Image
             src={me}

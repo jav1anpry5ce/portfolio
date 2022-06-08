@@ -37,7 +37,10 @@ const data = [
 export default function Work() {
   const { workRef } = useContext(SimpleContext);
   return (
-    <div className="mx-auto mb-40 max-w-4xl md:mb-80" ref={workRef}>
+    <div
+      className="mx-auto mb-40 max-w-4xl px-4 md:mb-80 lg:px-0"
+      ref={workRef}
+    >
       <div className="mb-16 flex justify-center text-3xl md:justify-start md:space-x-4">
         <span className="hidden text-muted sm:block">02.</span>
         <span className="font-semibold text-gray-100">

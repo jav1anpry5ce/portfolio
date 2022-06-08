@@ -6,7 +6,6 @@ import {
   Work,
   Contact,
   Header,
-  GoogleAd,
   Other,
 } from "../components";
 import Head from "next/head";
@@ -26,7 +25,6 @@ export default function Home() {
         <Work />
         <Other />
         <Contact />
-        <GoogleAd />
       </div>
     </div>
   );

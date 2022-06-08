@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 export default function MailMe() {
   return (
     <motion.div
-      className="fixed right-16 bottom-10 hidden md:block"
+      className="fixed right-16 bottom-10 hidden lg:block"
       initial={{ opacity: 0, scale: 0 }}
       whileInView={{ opacity: 1, scale: [0, 1.2, 1] }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.75 }}
     >
       <a
         href="mailto:javanpryce1@gmail.com"

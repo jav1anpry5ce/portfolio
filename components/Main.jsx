@@ -6,21 +6,21 @@ export default function Main() {
   const { mainRef } = useContext(SimpleContext);
   return (
     <div
-      className="mx-auto mb-20 flex min-h-[calc(100vh-71px)] max-w-4xl flex-1 flex-col justify-center px-4 sm:px-2"
+      className="mx-auto mb-20 flex min-h-[calc(100vh-71px)] max-w-4xl flex-1 flex-col justify-center px-4 lg:px-2"
       ref={mainRef}
     >
       <motion.div
         className="space-y-5"
         initial={{ opacity: 0, x: -300 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ ease: "easeInOut", duration: 0.5 }}
+        transition={{ ease: "easeInOut", duration: 0.75 }}
         viewport={{ once: true }}
       >
         <p className="text-lg text-secondary">Hi, my name is</p>
-        <h1 className="text-6xl font-bold text-gray-50 md:text-7xl">
+        <h1 className="sm:gradient-text gradient pb-2 text-6xl font-bold text-gray-50 md:text-7xl">
           Javaughn Pryce.
         </h1>
-        <h2 className="text-5xl font-semibold text-gray-400 md:text-6xl">
+        <h2 className="sm:gradient-text gradient text-5xl font-semibold text-gray-400 md:text-6xl">
           I build full stack applications.
         </h2>
         <p className="max-w-lg text-xl text-gray-300">

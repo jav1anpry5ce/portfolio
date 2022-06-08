@@ -63,8 +63,8 @@ function BuildCard({ title, description, stack, link }) {
 
 export default function Other() {
   return (
-    <div className="mx-auto -mt-32 mb-40 max-w-4xl md:mb-80">
-      <h1 className="my-12 text-center text-3xl font-medium text-gray-100">
+    <div className="mx-auto -mt-32 mb-40 max-w-4xl px-4 sm:px-0 md:mb-80">
+      <h1 className="my-12 text-center text-xl font-medium text-gray-100 md:text-3xl">
         Other Noteworthy Projects
       </h1>
       <motion.ul
@@ -79,7 +79,7 @@ export default function Other() {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 * index }}
+            transition={{ duration: 0.75, delay: 0.2 * index }}
             key={index}
           >
             <BuildCard {...item} />

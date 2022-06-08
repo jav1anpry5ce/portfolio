@@ -14,13 +14,13 @@ export default function Built({
 }) {
   if (index % 2 === 0) {
     return (
-      <div className="flex w-full flex-col justify-between px-2 md:flex-row md:px-0">
+      <div className="flex w-full flex-col justify-between md:flex-row">
         <motion.div
           className="order-last my-2 hidden grow md:my-0 md:block"
           initial={{ opacity: 0, x: -300 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.75 }}
         >
           <Image
             src={image}
@@ -35,7 +35,7 @@ export default function Built({
           initial={{ opacity: 0, x: 300 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.75 }}
         >
           <div className="mb-6 text-left">
             <p className="font-medium text-muted">Featured Project</p>
@@ -47,9 +47,7 @@ export default function Built({
           <div className="text-left text-gray-200 md:hidden">
             <p>{description}</p>
           </div>
-          <div
-            className="pt-5 md:hidden"
-          >
+          <div className="pt-5 md:hidden">
             <Image
               src={image}
               alt="ERMS"
@@ -92,13 +90,13 @@ export default function Built({
     );
   } else
     return (
-      <div className="flex w-full flex-col justify-between px-2 md:flex-row md:px-0">
+      <div className="flex w-full flex-col justify-between md:flex-row">
         <motion.div
           className="order-last my-2 hidden grow md:order-first md:my-0 md:block"
           initial={{ opacity: 0, x: 300 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.75 }}
         >
           <Image
             src={image}
@@ -113,21 +111,19 @@ export default function Built({
           initial={{ opacity: 0, x: -300 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.75 }}
         >
-          <div className="mb-6 sm:text-right">
+          <div className="mb-6 md:text-right">
             <p className="font-medium text-muted">Featured Project</p>
             <h4 className="text-lg font-semibold text-gray-300">{name}</h4>
           </div>
           <div className="hidden w-[30rem] -translate-x-24 rounded bg-[#075264]/90 px-4 py-1 text-gray-200 md:block">
             <p className="text-left">{description}</p>
           </div>
-          <div className="text-gray-200 sm:text-right md:hidden">
+          <div className="text-gray-200 md:hidden md:text-right">
             <p>{description}</p>
           </div>
-          <div
-            className="pt-5 md:hidden"
-          >
+          <div className="pt-5 md:hidden">
             <Image
               src={image}
               alt="ERMS"
@@ -136,7 +132,7 @@ export default function Built({
               className="aspect-square rounded object-fill object-center"
             />
           </div>
-          <div className="mt-4 flex w-full flex-wrap gap-x-2 text-right text-gray-400 sm:justify-end">
+          <div className="mt-4 flex w-full flex-wrap gap-x-2 text-right text-gray-400 md:justify-end">
             {builtWith.map((name, index) => (
               <p key={index}>{name}</p>
             ))}

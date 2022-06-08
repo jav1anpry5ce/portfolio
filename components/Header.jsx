@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState } from "react";
 import { SimpleContext } from "../utils/simpleContext";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
@@ -11,17 +11,6 @@ export default function Header() {
   const { scrollTo, mainRef, aboutRef, workRef, contactRef } =
     useContext(SimpleContext);
   const [open, setOpen] = useState(false);
-  const [shadow, setShadow] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 200) {
-        setShadow(true);
-      } else {
-        setShadow(false);
-      }
-    });
-  }, []);
 
   return (
     <div className="sticky top-0 z-[9999]">
@@ -89,16 +78,12 @@ export default function Header() {
           </div>
         </div>
       </Transition>
-      <div
-        className={`w-full bg-background/60 ${
-          shadow && "shadow"
-        } select-none`}
-      >
-        <ul className="mx-auto flex w-full max-w-7xl items-center justify-between bg-background/60 py-2 px-2  backdrop-blur-lg">
+      <div className="w-full select-none bg-background/50 shadow-2xl shadow-background backdrop-blur-lg">
+        <ul className="mx-auto flex w-full max-w-7xl items-center justify-between bg-background/50 p-2">
           <motion.li
             initial={{ opacity: 0, x: -200 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.75 }}
           >
             <Image
               src={logo}
@@ -120,9 +105,9 @@ export default function Header() {
             <motion.li
               className="group hidden cursor-pointer items-center space-x-2 sm:flex"
               onClick={() => scrollTo(aboutRef)}
-              initial={{ opacity: 0, y: -200 }}
+              initial={{ opacity: 0, y: "-100vh" }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.75 }}
             >
               <span className="text-muted">01.</span>
               <span className="text-gray-100 underline-offset-2 group-hover:underline">
@@ -132,9 +117,9 @@ export default function Header() {
             <motion.li
               className="group hidden cursor-pointer items-center space-x-2 sm:flex"
               onClick={() => scrollTo(workRef)}
-              initial={{ opacity: 0, y: -200 }}
+              initial={{ opacity: 0, y: "-100vh" }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
+              transition={{ delay: 0.2, duration: 0.75 }}
             >
               <span className="text-muted">02.</span>
               <span className="text-gray-100 underline-offset-2 group-hover:underline">
@@ -144,9 +129,9 @@ export default function Header() {
             <motion.li
               className="group hidden cursor-pointer items-center space-x-2 sm:flex "
               onClick={() => scrollTo(contactRef)}
-              initial={{ opacity: 0, y: -200 }}
+              initial={{ opacity: 0, y: "-100vh" }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
+              transition={{ delay: 0.4, duration: 0.75 }}
             >
               <span className="text-muted">03.</span>
               <span className="text-gray-100 underline-offset-2 group-hover:underline">
@@ -154,9 +139,9 @@ export default function Header() {
               </span>
             </motion.li>
             <motion.li
-              initial={{ opacity: 0, y: -200 }}
+              initial={{ opacity: 0, y: "-100vh" }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.5 }}
+              transition={{ delay: 0.6, duration: 0.75 }}
             >
               <a
                 href="api/resume"

@@ -39,7 +39,7 @@ export default function Built({
         >
           <div className="mb-6 text-left">
             <p className="font-medium text-muted">Featured Project</p>
-            <h4 className="text-lg font-semibold text-gray-300">{name}</h4>
+            <p className="text-lg font-semibold text-gray-300">{name}</p>
           </div>
           <div className="sticky z-50 hidden w-[30rem] rounded bg-[#075264]/90 px-4 py-1 text-gray-200 md:block">
             <p className="text-left">{description}</p>
@@ -115,7 +115,7 @@ export default function Built({
         >
           <div className="mb-6 md:text-right">
             <p className="font-medium text-muted">Featured Project</p>
-            <h4 className="text-lg font-semibold text-gray-300">{name}</h4>
+            <p className="text-lg font-semibold text-gray-300">{name}</p>
           </div>
           <div className="hidden w-[30rem] -translate-x-24 rounded bg-[#075264]/90 px-4 py-1 text-gray-200 md:block">
             <p className="text-left">{description}</p>

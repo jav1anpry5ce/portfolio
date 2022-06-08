@@ -79,8 +79,8 @@ export default function Header() {
         </div>
       </Transition>
       <div className="w-full select-none bg-background/50 shadow-2xl shadow-background backdrop-blur-lg">
-        <ul className="mx-auto flex w-full max-w-7xl items-center justify-between bg-background/50 p-2">
-          <motion.li
+        <div className="mx-auto flex w-full max-w-7xl items-center justify-between bg-background/50 p-2">
+          <motion.div
             initial={{ opacity: 0, x: -200 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.35 }}
@@ -93,14 +93,14 @@ export default function Header() {
               className="cursor-pointer rounded-full"
               onClick={() => scrollTo(mainRef)}
             />
-          </motion.li>
-          <li className="flex grow justify-end">
+          </motion.div>
+          <div className="flex grow justify-end">
             <FaBars
               fontSize={30}
               className="text-white sm:hidden"
               onClick={() => setOpen(!open)}
             />
-          </li>
+          </div>
           <motion.ul className="flex items-center space-x-4">
             <motion.li
               className="group hidden cursor-pointer items-center space-x-2 sm:flex"
@@ -153,7 +153,7 @@ export default function Header() {
               </a>
             </motion.li>
           </motion.ul>
-        </ul>
+        </div>
       </div>
     </div>
   );

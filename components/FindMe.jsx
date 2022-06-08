@@ -18,6 +18,7 @@ export default function FindMe() {
           rel="noreferrer"
         >
           <AiFillGithub
+            alt="Github"
             className="transform cursor-pointer text-gray-300 duration-300 hover:-translate-y-1 hover:text-muted"
             fontSize={30}
           />
@@ -28,6 +29,7 @@ export default function FindMe() {
           rel="noreferrer"
         >
           <AiFillLinkedin
+            alt="LinkedIn"
             className="transform cursor-pointer  text-gray-300 duration-300 hover:-translate-y-1 hover:text-muted"
             fontSize={30}
           />

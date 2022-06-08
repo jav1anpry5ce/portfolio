@@ -40,7 +40,7 @@ function BuildCard({ title, description, stack, link }) {
       href={link}
       target="_blank"
       rel="noreferrer"
-      className="flex min-h-[250px] max-w-[27rem] cursor-pointer flex-col justify-between gap-5 rounded bg-[#075264] p-6 transition duration-200 hover:-translate-y-2"
+      className="flex min-h-[250px] max-w-[27rem] cursor-pointer flex-col justify-between gap-5 rounded bg-[#043a47] p-6 transition duration-200 hover:-translate-y-2"
     >
       <div className="flex items-center justify-between">
         <BsFolder2Open fontSize={30} className="text-muted" />
@@ -49,10 +49,10 @@ function BuildCard({ title, description, stack, link }) {
         </a>
       </div>
       <div className="space-y-2">
-        <h2 className="text-2xl font-medium text-gray-100">{title}</h2>
-        <p className="text-gray-300">{description}</p>
+        <p className="text-2xl font-medium text-gray-100">{title}</p>
+        <p className="text-gray-200">{description}</p>
       </div>
-      <ul className="flex flex-wrap items-center gap-x-2 text-sm font-thin text-gray-300">
+      <ul className="flex flex-wrap items-center gap-x-2 text-sm font-thin text-gray-200">
         {stack.map((name, index) => (
           <li key={index}>{name}</li>
         ))}

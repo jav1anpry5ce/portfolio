@@ -44,18 +44,18 @@ export default function AboutMe() {
             Here are a few of the technologies I&apos;ve been working with
             recently:
           </p>
-          <ul className="flex list-inside list-disc space-x-16 md:space-x-32">
-            <div className="flex flex-col space-y-1">
+          <div className="flex space-x-16 md:space-x-32">
+            <ul className="flex list-inside list-disc flex-col space-y-1">
               <li>JavaScript (ES7)</li>
               <li>React</li>
               <li>Next JS</li>
-            </div>
-            <div className="flex flex-col space-y-1">
+            </ul>
+            <ul className="flex list-inside list-disc flex-col space-y-1">
               <li>Node JS</li>
               <li>Python</li>
               <li>Django</li>
-            </div>
-          </ul>
+            </ul>
+          </div>
         </div>
         <motion.div
           className="mt-4 flex items-center justify-center px-4 md:mt-0 md:block"

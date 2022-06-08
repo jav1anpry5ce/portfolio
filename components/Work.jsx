@@ -43,9 +43,9 @@ export default function Work() {
     >
       <div className="mb-16 flex justify-center text-3xl md:justify-start md:space-x-4">
         <span className="hidden text-muted sm:block">02.</span>
-        <span className="font-semibold text-gray-100">
+        <h1 className="font-semibold text-gray-100">
           Some Things I&apos;ve Built
-        </span>
+        </h1>
       </div>
       <div className="flex flex-col space-y-20">
         {data.map((item, index) => (

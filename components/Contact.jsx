@@ -15,11 +15,11 @@ export default function Contact() {
     >
       <div className="mb-8 flex justify-center text-xl md:mb-12 md:space-x-3">
         <span className="hidden text-muted sm:block">03.</span>
-        <span className="font-semibold text-gray-100">What&apos;s Next?</span>
+        <h1 className="font-semibold text-gray-100">What&apos;s Next?</h1>
       </div>
-      <h3 className="text-center text-4xl font-bold text-gray-200">
+      <p className="text-center text-4xl font-bold text-gray-200">
         Get In Touch
-      </h3>
+      </p>
       <p className="mx-auto mt-6 max-w-md text-center text-2xl font-medium text-gray-400">
         I am always looking for new and exciting projects to work on. Hit me up
         and let&apos;s talk!

@@ -64,9 +64,9 @@ function BuildCard({ title, description, stack, link }) {
 export default function Other() {
   return (
     <div className="mx-auto -mt-32 mb-40 max-w-4xl px-4 sm:px-0 md:mb-80">
-      <h1 className="my-12 text-center text-xl font-medium text-gray-100 md:text-3xl">
+      <h2 className="my-12 text-center text-xl font-medium text-gray-100 md:text-3xl">
         Other Noteworthy Projects
-      </h1>
+      </h2>
       <motion.ul
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

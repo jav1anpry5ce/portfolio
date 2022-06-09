@@ -42,8 +42,8 @@
         background: linear-gradient(
   to bottom,
   #cfab0e,
-  #cf8b0e 50%,
-  #cf5e0e 50%,
+  #cf8b0e 35%,
+  #cf5e0e 55%,
   #cf480e
 );
         -webkit-background-clip: text;

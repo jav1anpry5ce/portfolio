@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="mx-auto w-full flex-1">
       <Head>
-        <title>Portfolio - Javaughn Pryce</title>
+        <title>Javaughn Pryce - Portfolio</title>
       </Head>
       <Header />
       <div className="overflow-x-hidden">

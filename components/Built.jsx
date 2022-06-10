@@ -63,7 +63,7 @@ export default function Built({
           </div>
           <div className="mt-6 flex justify-start space-x-4">
             <a href={github} target="_blank" rel="noreferrer">
-              <div className="group flex items-center gap-2 rounded bg-muted/80 px-4 py-1">
+              <div className="button group">
                 <p className="font-medium text-gray-200 transition duration-300 group-hover:text-white">
                   Source Code
                 </p>
@@ -74,7 +74,7 @@ export default function Built({
               </div>
             </a>
             <a href={live} target="_blank" rel="noreferrer">
-              <div className="group flex items-center gap-2 rounded bg-muted/80 px-4 py-1">
+              <div className="button group">
                 <p className="font-medium text-gray-200 transition duration-300 group-hover:text-white">
                   Live View
                 </p>
@@ -139,7 +139,7 @@ export default function Built({
           </div>
           <div className="mt-6 flex space-x-4 md:justify-end">
             <a href={github} target="_blank" rel="noreferrer">
-              <div className="group flex items-center gap-2 rounded bg-muted/80 px-4 py-1">
+              <div className="button group">
                 <p className="font-medium text-gray-200 transition duration-300 group-hover:text-white">
                   Source Code
                 </p>
@@ -150,7 +150,7 @@ export default function Built({
               </div>
             </a>
             <a href={live} target="_blank" rel="noreferrer">
-              <div className="group flex items-center gap-2 rounded bg-muted/80 px-4 py-1">
+              <div className="button group flex">
                 <p className="font-medium text-gray-200 transition duration-300 group-hover:text-white">
                   Live View
                 </p>

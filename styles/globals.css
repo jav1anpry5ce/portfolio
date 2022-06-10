@@ -35,6 +35,10 @@
         writing-mode: vertical-rl;
         text-orientation: sideways;
     }
+    .button {
+        @apply flex cursor-pointer items-center gap-2 rounded bg-transparent 
+         px-1.5 py-0.5 text-muted ring-1 ring-muted transition duration-200 hover:bg-muted/20
+    }
 }
 
 @layer utilities {

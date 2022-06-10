@@ -19,7 +19,7 @@ export default function Contact() {
           What&apos;s Next?
         </h1>
       </div>
-      <p className="text-center text-3xl font-bold text-gray-200">
+      <p className="text-center text-2xl font-bold text-gray-200 md:text-3xl">
         Get In Touch
       </p>
       <p className="mx-auto mt-6 max-w-md text-center text-2xl font-medium text-gray-400">

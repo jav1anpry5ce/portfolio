@@ -50,3 +50,14 @@
         -webkit-text-fill-color: transparent;
     }
 }
+
+.gradient-image{
+    background: linear-gradient(
+  to bottom,
+  #cfab0e,
+  #cf8b0e 35%,
+  #cf5e0e 55%,
+  #cf480e
+);
+opacity: 0.6
+}

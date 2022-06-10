@@ -58,18 +58,20 @@ export default function AboutMe() {
           </div>
         </div>
         <motion.div
-          className="mt-4 flex items-center justify-center px-4 md:mt-0 md:block"
+          className="group relative mt-4 flex items-center justify-center px-4 md:mt-0 md:block"
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
+          <div className="gradient-image absolute z-50 h-[312px] w-[312px] rounded transition duration-300 group-hover:opacity-0 group-active:opacity-0" />
           <Image
             src={me}
             alt="Me"
+            layout="fixed"
             className="rounded"
-            width={350}
-            height={350}
+            width={312}
+            height={312}
           />
         </motion.div>
       </motion.div>

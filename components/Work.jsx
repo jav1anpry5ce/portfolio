@@ -42,8 +42,8 @@ export default function Work() {
       ref={workRef}
     >
       <div className="mb-16 flex justify-center text-3xl md:justify-start md:space-x-4">
-        <span className="hidden text-muted sm:block">02.</span>
-        <h1 className="font-semibold text-gray-100">
+        <span className="gradient-text hidden text-muted sm:block">02.</span>
+        <h1 className="gradient-text font-semibold text-gray-100">
           Some Things I&apos;ve Built
         </h1>
       </div>

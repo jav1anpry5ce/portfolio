@@ -17,10 +17,10 @@ export default function Main() {
         viewport={{ once: true }}
       >
         <p className="text-lg text-secondary">Hi, my name is</p>
-        <p className="sm:gradient-text pb-2 text-6xl font-bold text-gray-50 md:text-7xl">
+        <p className="gradient-text pb-2 text-6xl font-bold text-gray-50 md:text-7xl">
           Javaughn Pryce.
         </p>
-        <p className="sm:gradient-text text-5xl font-semibold text-gray-400 md:text-6xl">
+        <p className="text-5xl font-semibold text-gray-400 md:text-6xl">
           I build full stack applications.
         </p>
         <p className="max-w-lg text-xl text-gray-300">

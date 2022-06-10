@@ -13,11 +13,13 @@ export default function Contact() {
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
     >
-      <div className="mb-8 flex justify-center text-xl md:mb-12 md:space-x-3">
-        <span className="hidden text-muted sm:block">03.</span>
-        <h1 className="font-semibold text-gray-100">What&apos;s Next?</h1>
+      <div className="mb-8 flex justify-center text-3xl md:mb-12 md:space-x-3">
+        <span className="gradient-text hidden text-muted sm:block">03.</span>
+        <h1 className="gradient-text font-semibold text-gray-100">
+          What&apos;s Next?
+        </h1>
       </div>
-      <p className="text-center text-4xl font-bold text-gray-200">
+      <p className="text-center text-3xl font-bold text-gray-200">
         Get In Touch
       </p>
       <p className="mx-auto mt-6 max-w-md text-center text-2xl font-medium text-gray-400">

@@ -44,7 +44,7 @@ export default function AboutMe() {
             Here are a few of the technologies I&apos;ve been working with
             recently:
           </p>
-          <div className="flex space-x-16 md:space-x-32">
+          <ul className="flex space-x-16 md:space-x-32">
             <ul className="flex list-inside list-disc flex-col space-y-1">
               <li>JavaScript (ES7)</li>
               <li>React</li>
@@ -55,7 +55,7 @@ export default function AboutMe() {
               <li>Python</li>
               <li>Django</li>
             </ul>
-          </div>
+          </ul>
         </div>
         <motion.div
           className="group relative mt-4 flex items-center justify-center px-4 md:mt-0 md:block"

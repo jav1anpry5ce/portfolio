@@ -25,20 +25,20 @@ export default function AboutMe() {
       >
         <div className="flex max-w-lg grow flex-col space-y-6 pr-4 text-base font-medium text-gray-400 md:items-start">
           <p>
-            Hello! My name is Javaughn Pryce I am a final year student at the
+            Hello! My name is Javaughn Pryce, a recent graduate of the
             University of the Commonwealth Caribbean. You can always find me at
             my computer working on new ideas. My interest in web development
             started in 2019 after starting university.
           </p>
           <p>
-            Fast-forward to today, I&apos;ve had the pleasure of working on some
-            very exciting projects. One of my favorite projects was building a
-            virtual meeting room using Three JS along with React and Node JS. I
-            was also placed first place in the annual Byte the Pi Caribbean
-            Hackathon, my team and I built a web application that would speed up
-            the registration process for vaccination and testing of the COVID 19
-            pandemic. The system was also designed to manage the inventory of
-            the vaccines.
+            Fast-forward to today. And I&apos;ve had the pleasure of working on
+            some very exciting projects. One of my favorite projects was
+            building a virtual meeting room using Three-JS along with React and
+            Node JS. I was also placed first place in the annual Byte the Pi
+            Caribbean Hackathon; my team and I built a web application that
+            would speed up the registration process for vaccination and testing
+            of the COVID 19 pandemic. The system was also designed to manage the
+            inventory of vaccines.
           </p>
           <p>
             Here are a few of the technologies I&apos;ve been working with

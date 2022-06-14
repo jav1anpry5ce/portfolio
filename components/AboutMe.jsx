@@ -45,16 +45,16 @@ export default function AboutMe() {
             recently:
           </p>
           <ul className="flex space-x-16 md:space-x-32">
-            <ul className="flex list-inside list-disc flex-col space-y-1">
+            <div className="flex list-inside list-disc flex-col space-y-1">
               <li>JavaScript (ES7)</li>
               <li>React</li>
               <li>Next JS</li>
-            </ul>
-            <ul className="flex list-inside list-disc flex-col space-y-1">
+            </div>
+            <div className="flex list-inside list-disc flex-col space-y-1">
               <li>Node JS</li>
               <li>Python</li>
               <li>Django</li>
-            </ul>
+            </div>
           </ul>
         </div>
         <motion.div

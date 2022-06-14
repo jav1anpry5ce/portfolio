@@ -39,6 +39,14 @@
         @apply flex cursor-pointer items-center gap-2 rounded bg-transparent 
          px-1.5 py-0.5 text-muted ring-1 ring-muted transition duration-200 hover:bg-muted/20
     }
+    .list {
+        -moz-column-count: 2;
+        -moz-column-gap: 5rem;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 5rem;
+        column-count: 2;
+        column-gap: 5rem;
+    }
 }
 
 @layer utilities {

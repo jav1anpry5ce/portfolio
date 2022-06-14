@@ -37,7 +37,7 @@ const data = [
 export default function Work() {
   const { workRef } = useContext(SimpleContext);
   return (
-    <div
+    <section
       className="mx-auto mb-40 max-w-4xl px-4 md:mb-80 lg:px-0"
       ref={workRef}
     >
@@ -52,6 +52,6 @@ export default function Work() {
           <Built key={index} index={index} {...item} />
         ))}
       </div>
-    </div>
+    </section>
   );
 }

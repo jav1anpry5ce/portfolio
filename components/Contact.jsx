@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Contact() {
   const { contactRef } = useContext(SimpleContext);
   return (
-    <motion.div
+    <motion.section
       className="mx-auto mb-48 max-w-4xl px-4 sm:px-0"
       ref={contactRef}
       initial={{ opacity: 0, scale: 0 }}
@@ -34,6 +34,6 @@ export default function Contact() {
           Hit Me Up
         </a>
       </div>
-    </motion.div>
+    </motion.section>
   );
 }

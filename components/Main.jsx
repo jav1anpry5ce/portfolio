@@ -5,7 +5,7 @@ import { SimpleContext } from "../utils/simpleContext";
 export default function Main() {
   const { mainRef } = useContext(SimpleContext);
   return (
-    <div
+    <section
       className="mx-auto mb-20 flex min-h-[calc(100vh-71px)] max-w-4xl flex-1 flex-col justify-center px-4 lg:px-2"
       ref={mainRef}
     >
@@ -29,6 +29,6 @@ export default function Main() {
           development using React Native.
         </p>
       </motion.div>
-    </div>
+    </section>
   );
 }

@@ -8,7 +8,7 @@ export default function AboutMe() {
   const { aboutRef } = useContext(SimpleContext);
 
   return (
-    <div
+    <section
       className="mx-auto mb-20 max-w-4xl px-4 md:mb-80 lg:px-2"
       ref={aboutRef}
     >
@@ -23,7 +23,7 @@ export default function AboutMe() {
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <div className="flex max-w-lg grow flex-col items-center space-y-6 pr-4 text-base font-medium text-gray-400 md:items-start">
+        <div className="flex max-w-lg grow flex-col space-y-6 pr-4 text-base font-medium text-gray-400 md:items-start">
           <p>
             Hello! My name is Javaughn Pryce I am a final year student at the
             University of the Commonwealth Caribbean. You can always find me at
@@ -44,17 +44,13 @@ export default function AboutMe() {
             Here are a few of the technologies I&apos;ve been working with
             recently:
           </p>
-          <ul className="flex space-x-16 md:space-x-32">
-            <div className="flex list-inside list-disc flex-col space-y-1">
-              <li>JavaScript (ES7)</li>
-              <li>React</li>
-              <li>Next JS</li>
-            </div>
-            <div className="flex list-inside list-disc flex-col space-y-1">
-              <li>Node JS</li>
-              <li>Python</li>
-              <li>Django</li>
-            </div>
+          <ul className="md:list list-inside list-disc">
+            <li>JavaScript (ES7)</li>
+            <li>React</li>
+            <li>Next JS</li>
+            <li>Node JS</li>
+            <li>Python</li>
+            <li>Django</li>
           </ul>
         </div>
         <motion.div
@@ -75,6 +71,6 @@ export default function AboutMe() {
           />
         </motion.div>
       </motion.div>
-    </div>
+    </section>
   );
 }

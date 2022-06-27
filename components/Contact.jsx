@@ -8,10 +8,10 @@ export default function Contact() {
     <motion.section
       className="mx-auto mb-48 max-w-4xl px-4 sm:px-0"
       ref={contactRef}
-      initial={{ opacity: 0, scale: 0 }}
+      initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
     >
       <div className="mb-8 flex justify-center text-3xl md:mb-12 md:space-x-3">
         <span className="gradient-text hidden text-muted sm:block">03.</span>

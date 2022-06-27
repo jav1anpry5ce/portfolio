@@ -17,10 +17,10 @@ export default function Built({
       <div className="flex w-full flex-col justify-between md:flex-row">
         <motion.div
           className="order-last my-2 hidden grow md:my-0 md:block"
-          initial={{ opacity: 0, x: -300 }}
+          initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <Image
             src={image}
@@ -32,10 +32,10 @@ export default function Built({
         </motion.div>
         <motion.div
           className="md:max-w-sm"
-          initial={{ opacity: 0, x: 300 }}
+          initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <div className="mb-6 text-left">
             <p className="font-medium text-muted">Featured Project</p>
@@ -93,10 +93,10 @@ export default function Built({
       <div className="flex w-full flex-col justify-between md:flex-row">
         <motion.div
           className="order-last my-2 hidden grow md:order-first md:my-0 md:block"
-          initial={{ opacity: 0, x: 300 }}
+          initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <Image
             src={image}
@@ -108,10 +108,10 @@ export default function Built({
         </motion.div>
         <motion.div
           className="md:max-w-sm"
-          initial={{ opacity: 0, x: -300 }}
+          initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <div className="mb-6 md:text-right">
             <p className="font-medium text-muted">Featured Project</p>

@@ -18,10 +18,10 @@ export default function AboutMe() {
       </div>
       <motion.div
         className="flex w-full flex-col items-center md:flex-row md:items-start md:space-x-6"
-        initial={{ opacity: 0, x: -300 }}
+        initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
       >
         <div className="flex max-w-lg grow flex-col space-y-6 pr-4 text-base font-medium text-gray-400 md:items-start">
           <p>
@@ -55,10 +55,10 @@ export default function AboutMe() {
         </div>
         <motion.div
           className="group relative mt-4 flex items-center justify-center px-4 md:mt-0 md:block"
-          initial={{ opacity: 0, scale: 0 }}
+          initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
         >
           <div className="gradient-image absolute z-50 h-[312px] w-[312px] rounded transition duration-300 group-hover:opacity-0 group-active:opacity-0" />
           <Image

@@ -24,10 +24,10 @@ export default function Built({
         >
           <Image
             src={image}
-            alt="ERMS"
+            alt=""
             width={550}
             height={350}
-            className="aspect-square rounded object-fill object-center"
+            className="aspect-square rounded object-contain object-center"
           />
         </motion.div>
         <motion.div
@@ -50,10 +50,10 @@ export default function Built({
           <div className="pt-5 md:hidden">
             <Image
               src={image}
-              alt="ERMS"
+              alt=""
               width={550}
               height={350}
-              className="aspect-square rounded object-fill object-center"
+              className="aspect-square rounded object-contain object-center"
             />
           </div>
           <div className="mt-4 flex w-full flex-wrap gap-x-2 text-left text-gray-400">
@@ -62,17 +62,19 @@ export default function Built({
             ))}
           </div>
           <div className="mt-6 flex justify-start space-x-4">
-            <a href={github} target="_blank" rel="noreferrer">
-              <div className="button group">
-                <p className="font-medium text-gray-200 transition duration-300 group-hover:text-white">
-                  Source Code
-                </p>
-                <AiFillGithub
-                  fontSize={30}
-                  className="cursor-pointer text-gray-200 transition duration-300 group-hover:text-white"
-                />
-              </div>
-            </a>
+            {github && (
+              <a href={github} target="_blank" rel="noreferrer">
+                <div className="button group">
+                  <p className="font-medium text-gray-200 transition duration-300 group-hover:text-white">
+                    Source Code
+                  </p>
+                  <AiFillGithub
+                    fontSize={30}
+                    className="cursor-pointer text-gray-200 transition duration-300 group-hover:text-white"
+                  />
+                </div>
+              </a>
+            )}
             <a href={live} target="_blank" rel="noreferrer">
               <div className="button group">
                 <p className="font-medium text-gray-200 transition duration-300 group-hover:text-white">
@@ -100,10 +102,10 @@ export default function Built({
         >
           <Image
             src={image}
-            alt="ERMS"
+            alt=""
             width={550}
             height={350}
-            className="aspect-square rounded object-fill object-center"
+            className="aspect-square rounded object-contain object-center"
           />
         </motion.div>
         <motion.div
@@ -126,10 +128,10 @@ export default function Built({
           <div className="pt-5 md:hidden">
             <Image
               src={image}
-              alt="ERMS"
+              alt=""
               width={550}
               height={350}
-              className="aspect-square rounded object-fill object-center"
+              className="aspect-square rounded object-contain object-center"
             />
           </div>
           <div className="mt-4 flex w-full flex-wrap gap-x-2 text-right text-gray-400 md:justify-end">
@@ -138,17 +140,19 @@ export default function Built({
             ))}
           </div>
           <div className="mt-6 flex space-x-4 md:justify-end">
-            <a href={github} target="_blank" rel="noreferrer">
-              <div className="button group">
-                <p className="font-medium text-gray-200 transition duration-300 group-hover:text-white">
-                  Source Code
-                </p>
-                <AiFillGithub
-                  fontSize={30}
-                  className="cursor-pointer text-gray-200 transition duration-300 group-hover:text-white"
-                />
-              </div>
-            </a>
+            {github && (
+              <a href={github} target="_blank" rel="noreferrer">
+                <div className="button group">
+                  <p className="font-medium text-gray-200 transition duration-300 group-hover:text-white">
+                    Source Code
+                  </p>
+                  <AiFillGithub
+                    fontSize={30}
+                    className="cursor-pointer text-gray-200 transition duration-300 group-hover:text-white"
+                  />
+                </div>
+              </a>
+            )}
             <a href={live} target="_blank" rel="noreferrer">
               <div className="button group flex">
                 <p className="font-medium text-gray-200 transition duration-300 group-hover:text-white">

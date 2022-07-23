@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import Image from "next/image";
-import me from "../assets/img.jpeg";
 import { SimpleContext } from "../utils/simpleContext";
 import { motion } from "framer-motion";
 
@@ -62,7 +61,7 @@ export default function AboutMe() {
         >
           <div className="gradient-image absolute z-50 h-[312px] w-[312px] rounded transition duration-300 group-hover:opacity-0 group-active:opacity-0" />
           <Image
-            src={me}
+            src="/images/img.jpeg"
             alt="Me"
             layout="fixed"
             className="rounded"

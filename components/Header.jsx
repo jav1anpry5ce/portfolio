@@ -3,7 +3,6 @@ import { SimpleContext } from "../utils/simpleContext";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { Transition } from "@headlessui/react";
-import logo from "../assets/logo.jpeg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -92,7 +91,7 @@ export default function Header() {
             tabIndex="1"
           >
             <Image
-              src={logo}
+              src="/images/logo.jpeg"
               alt="logo"
               width={55}
               height={55}

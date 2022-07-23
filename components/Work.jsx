@@ -1,14 +1,19 @@
 import React, { useContext } from "react";
 import Built from "./Built";
-import ERMS from "../assets/ERMS.jpg";
-import chat from "../assets/chat.jpg";
-import virtual from "../assets/virtual.jpg";
 import { SimpleContext } from "../utils/simpleContext";
 
 const data = [
   {
+    name: "Aspire CFS",
+    image: "/images/aspirecfs.png",
+    description:
+      "Aspire CFS needed a new website to be built for them. I spearheaded the build of the website from the ground up, including the design, development, and deployment of the website.",
+    builtWith: ["NextJS", "GraphCMS"],
+    live: "https://aspirecfs.com",
+  },
+  {
     name: "Epidemic Response Management System",
-    image: ERMS,
+    image: "/images/ERMS.jpg",
     description:
       "This system was designed for managing epidemics/pandemics such as COVID. The main function of the system was to aid in speeding up the registrations process for testing and vaccination for Jamaican citizens.",
     builtWith: ["Django", "React", "Tailwindcss", "Redux"],
@@ -17,7 +22,7 @@ const data = [
   },
   {
     name: "Virtual Link Up",
-    image: virtual,
+    image: "/images/virtual.jpg",
     description:
       "This application was created for the department of Information Technology at University of the Commonwealth Caribbean. The application was used to host a virtual meeting with spatial voice chat capability hosting 30+ people.",
     builtWith: ["React", "Node JS", "Three JS", "Socket.io", "Tailwindcss"],
@@ -26,7 +31,7 @@ const data = [
   },
   {
     name: "Chat App",
-    image: chat,
+    image: "/images/chat.jpg",
     description: "Whatsapp like chat application.",
     builtWith: ["React", "Node JS", "Socket.io", "Tailwindcss"],
     github: "https://github.com/jav1anpry5ce/React-Chat-App",

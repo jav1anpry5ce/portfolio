@@ -78,7 +78,7 @@ export default function Built({
             <a href={live} target="_blank" rel="noreferrer">
               <div className="button group">
                 <p className="font-medium text-gray-200 transition duration-300 group-hover:text-white">
-                  Live View
+                  Visit Site
                 </p>
                 <AiOutlineEye
                   fontSize={30}
@@ -156,7 +156,7 @@ export default function Built({
             <a href={live} target="_blank" rel="noreferrer">
               <div className="button group flex">
                 <p className="font-medium text-gray-200 transition duration-300 group-hover:text-white">
-                  Live View
+                  Visit Site
                 </p>
                 <AiOutlineEye
                   fontSize={30}

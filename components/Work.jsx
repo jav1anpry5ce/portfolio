@@ -8,7 +8,7 @@ const data = [
     image: "/images/aspirecfs.png",
     description:
       "Aspire CFS needed a new website to be built for them. I spearheaded the build of the website from the ground up, including the design, development, and deployment of the website.",
-    builtWith: ["NextJS", "GraphCMS"],
+    builtWith: ["NextJS", "Tailwindcss", "GraphCMS"],
     live: "https://aspirecfs.com",
   },
   {

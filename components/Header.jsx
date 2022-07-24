@@ -4,7 +4,6 @@ import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import { Transition } from "@headlessui/react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 export default function Header() {
   const { scrollTo, mainRef, aboutRef, workRef, contactRef } =
@@ -82,14 +81,7 @@ export default function Header() {
       </Transition>
       <div className="w-full select-none overflow-x-hidden bg-background/70 shadow-2xl shadow-background backdrop-blur-lg">
         <div className="mx-auto flex w-full max-w-7xl items-center justify-between p-2">
-          <motion.a
-            href="#main"
-            initial={{ opacity: 0, x: -200 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.35 }}
-            onClick={() => scrollTo(mainRef)}
-            tabIndex="1"
-          >
+          <a href="#main" onClick={() => scrollTo(mainRef)} tabIndex="1">
             <Image
               src="/images/logo.jpeg"
               alt="logo"
@@ -98,7 +90,7 @@ export default function Header() {
               layout="fixed"
               className="cursor-pointer rounded-full"
             />
-          </motion.a>
+          </a>
           <div className="flex grow justify-end">
             <FaBars
               fontSize={30}
@@ -107,52 +99,40 @@ export default function Header() {
             />
           </div>
           <div className="flex items-center space-x-4">
-            <motion.a
+            <a
               href="#about"
               className="group hidden cursor-pointer items-center space-x-2 sm:flex"
               onClick={() => scrollTo(aboutRef)}
-              initial={{ opacity: 0, x: "100vw" }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.35 }}
               tabIndex="2"
             >
               <span className="text-muted">01.</span>
               <span className="text-gray-100 underline-offset-2 group-hover:underline">
                 About
               </span>
-            </motion.a>
-            <motion.a
+            </a>
+            <a
               href="#work"
               className="group hidden cursor-pointer items-center space-x-2 sm:flex"
               onClick={() => scrollTo(workRef)}
-              initial={{ opacity: 0, x: "100vw" }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.2, duration: 0.35 }}
               tabIndex="3"
             >
               <span className="text-muted">02.</span>
               <span className="text-gray-100 underline-offset-2 group-hover:underline">
                 Work
               </span>
-            </motion.a>
-            <motion.a
+            </a>
+            <a
               href="#contact"
               className="group hidden cursor-pointer items-center space-x-2 sm:flex "
               onClick={() => scrollTo(contactRef)}
-              initial={{ opacity: 0, x: "100vw" }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.4, duration: 0.35 }}
               tabIndex="4"
             >
               <span className="text-muted">03.</span>
               <span className="text-gray-100 underline-offset-2 group-hover:underline">
                 Contact
               </span>
-            </motion.a>
-            <motion.a
-              initial={{ opacity: 0, x: "100vw" }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.4, duration: 0.35 }}
+            </a>
+            <a
               tabIndex="5"
               href="api/resume"
               download
@@ -160,7 +140,7 @@ export default function Header() {
         text-muted ring-1 ring-muted transition duration-200 hover:bg-muted/20 hover:text-gray-100 sm:block"
             >
               Resume
-            </motion.a>
+            </a>
           </div>
         </div>
       </div>

@@ -4,6 +4,14 @@ import { SimpleContext } from "../utils/simpleContext";
 
 const data = [
   {
+    name: "Smash Karaoke",
+    image: "/images/smash-karaoke.png",
+    description: "Fun Karaoke App to sing along with friends",
+    builtWith: ["React", "Tailwind CSS", "Socket.Io", "Node.js"],
+    github: "https://github.com/jav1anpry5ce/karaoke_app",
+    live: "https://smash-karaoke.vercel.app",
+  },
+  {
     name: "Aspire CFS",
     image: "/images/aspirecfs.png",
     description:
@@ -28,14 +36,6 @@ const data = [
     builtWith: ["React", "Node JS", "Three JS", "Socket.io", "Tailwindcss"],
     github: "https://github.com/jav1anpry5ce/spatial_virtual_meetings",
     live: "https://meetings.javaughnpryce.live",
-  },
-  {
-    name: "Chat App",
-    image: "/images/chat.jpg",
-    description: "Whatsapp like chat application.",
-    builtWith: ["React", "Node JS", "Socket.io", "Tailwindcss"],
-    github: "https://github.com/jav1anpry5ce/React-Chat-App",
-    live: "https://chat.javaughnpryce.live",
   },
 ];
 

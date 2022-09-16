@@ -5,6 +5,12 @@ import { motion } from "framer-motion";
 
 const data = [
   {
+    title: "Chat App",
+    description: "Whatsapp like chat application.",
+    stack: ["React", "Node JS", "Socket.io", "Tailwindcss"],
+    link: "https://github.com/jav1anpry5ce/React-Chat-App",
+  },
+  {
     title: "Hotspot Alert",
     description:
       "The “Hotspot Alert” is a web application that allows its users to share current criminal occurrences the moment they happen.",
@@ -40,7 +46,7 @@ function BuildCard({ title, description, stack, link }) {
       href={link}
       target="_blank"
       rel="noreferrer"
-      className="flex min-h-[250px] max-w-[27rem] cursor-pointer flex-col justify-between gap-5 rounded bg-[#054f61] p-6 transition duration-200 hover:-translate-y-2"
+      className="flex min-h-[250px] w-[22rem] cursor-pointer flex-col justify-between gap-5 rounded bg-[#054f61] p-6 transition duration-200 hover:-translate-y-2 lg:w-[27rem]"
     >
       <div className="flex items-center justify-between">
         <BsFolder2Open fontSize={30} className="text-muted" />
@@ -70,7 +76,8 @@ export default function Other() {
         whileInView={{ opacity: 1 }}
         transition={{ staggerChildren: 0.5 }}
         viewport={{ once: true }}
-        className="grid grid-cols-1 justify-items-center gap-y-5 px-2 lg:grid-cols-2 lg:px-0"
+        // className="grid grid-cols-1 justify-items-center gap-y-5 px-2 lg:grid-cols-2 lg:px-0"
+        className="flex flex-wrap items-center justify-center gap-4 px-2"
       >
         {data.map((item, index) => (
           <motion.li

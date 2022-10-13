@@ -5,6 +5,13 @@ import { motion } from "framer-motion";
 
 const data = [
   {
+    title: "Epidemic Response Management System",
+    description:
+      "This system was designed for managing epidemics/pandemics such as COVID.",
+    stack: ["Django", "React", "Tailwindcss", "Redux"],
+    link: "https://github.com/jav1anpry5ce/epidemic_management_system",
+  },
+  {
     title: "Chat App",
     description: "Whatsapp like chat application.",
     stack: ["React", "Node JS", "Socket.io", "Tailwindcss"],

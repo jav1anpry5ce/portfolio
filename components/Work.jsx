@@ -4,6 +4,14 @@ import { SimpleContext } from "../utils/simpleContext";
 
 const data = [
   {
+    name: "Music Streamer",
+    image: "/images/music.png",
+    description: "A music streaming app built with React.",
+    builtWith: ["React", "Tailwindcss"],
+    github: "https://github.com/jav1anpry5ce/music_stream_app",
+    live: "https://music-streamer.vercel.app/",
+  },
+  {
     name: "Smash Karaoke",
     image: "/images/smash-karaoke.png",
     description: "Fun Karaoke App to sing along with friends",
@@ -18,15 +26,6 @@ const data = [
       "Aspire CFS needed a new website to be built for them. I spearheaded the build of the website from the ground up, including the design, development, and deployment of the website.",
     builtWith: ["NextJS", "Tailwindcss", "GraphCMS"],
     live: "https://aspirecfs.com",
-  },
-  {
-    name: "Epidemic Response Management System",
-    image: "/images/ERMS.jpg",
-    description:
-      "This system was designed for managing epidemics/pandemics such as COVID. The main function of the system was to aid in speeding up the registrations process for testing and vaccination for Jamaican citizens.",
-    builtWith: ["Django", "React", "Tailwindcss", "Redux"],
-    github: "https://github.com/jav1anpry5ce/epidemic_management_system",
-    live: "https://epidemic-management-system.vercel.app",
   },
   {
     name: "Virtual Link Up",

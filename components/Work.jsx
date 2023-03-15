@@ -4,6 +4,13 @@ import { SimpleContext } from "../utils/simpleContext";
 
 const data = [
   {
+    name: "J&K Charters and Services",
+    image: "/images/jkcharters.png",
+    description: "A website for a local charter company.",
+    builtWith: ["NextJS", "Tailwindcss"],
+    live: "https://jkchartersllc.vercel.app/",
+  },
+  {
     name: "Music Streamer",
     image: "/images/music.png",
     description: "A music streaming app built with React.",

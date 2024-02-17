@@ -83,7 +83,7 @@ export default function Header() {
         <div className="mx-auto flex w-full max-w-7xl items-center justify-between p-2">
           <a href="#main" onClick={() => scrollTo(mainRef)} tabIndex="1">
             <Image
-              src="/images/head_shot.jpg"
+              src="/images/logo.jpeg"
               alt="logo"
               width={55}
               height={55}

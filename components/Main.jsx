@@ -20,13 +20,23 @@ export default function Main() {
         <p className="gradient-text pb-2 text-6xl font-bold text-gray-50 md:text-7xl">
           Javaughn Pryce.
         </p>
-        <p className="text-5xl font-semibold text-gray-400 md:text-6xl">
-          I build full stack applications.
+        <p className="text-2xl font-semibold text-gray-400 md:text-4xl">
+          A software sorcerer currently mastering my craft at Drexel University.
         </p>
-        <p className="max-w-lg text-xl text-gray-300">
-          I&apos;m a full stack software developer specializing in Next.js,
-          React, Node js and Django. I also have experience with mobile app
-          development using React Native.
+        <p className="max-w-2xl text-lg text-gray-300">
+          Now, as I delve deeper into the realm of academia, I&apos;ve harnessed
+          the potent spell of Test-Driven Development (TDD), adding another
+          powerful tool to my enchanted toolkit. With expertise in Java,
+          JavaScript, React, Node.js, Python, and Django, I&apos;m not just your
+          run-of-the-mill coder – I&apos;m here to conjure up innovative
+          solutions that defy expectation.
+        </p>
+        <p className="max-w-2xl text-lg text-gray-300">
+          Let&apos;s collaborate and cast some spells of success together.{" "}
+          <a href="mailto:javanpryce1@gmail.com" className="underline">
+            Reach out
+          </a>
+          , and let&apos;s enchant the digital world!
         </p>
       </motion.div>
     </section>

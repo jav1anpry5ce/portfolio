@@ -15,7 +15,7 @@
 
     ::-webkit-scrollbar-track {
         /* display: none; */
-        background: transparent;
+        background: #042f39;
     }
 
     ::-webkit-scrollbar-thumb {
@@ -25,9 +25,20 @@
         background-clip: padding-box;
     }
 
-    /* ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-    } */
+    ::-webkit-scrollbar-thumb:hover {
+        cursor: pointer;
+        border: 3px solid transparent;
+        background: rgba(252, 252, 252, 0.4);
+        border-radius: 99999px;
+        background-clip: padding-box;
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+        border: 3px solid transparent;
+        background: rgba(252, 252, 252, 0.4);
+        border-radius: 99999px;
+        background-clip: padding-box;
+    }
 }
 
 @layer components {

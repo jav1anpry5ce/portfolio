@@ -5,6 +5,20 @@ import { motion } from "framer-motion";
 
 const data = [
   {
+    title: "MA Verification Checker",
+    description:
+      "MA Verification Checker automates medical assistance benefits eligibility verification using web scraping technology. It streamlines the process, ensures accuracy, and boosts operational efficiency, enabling timely access to healthcare services for eligible individuals.",
+    stack: ["Python", "Selenium", "Pandas"],
+    link: "#",
+  },
+  {
+    title: "PDF Inspector",
+    description:
+      "PDF Inspector expedites insurance claims processing by swiftly identifying inconsistencies in PDF documents. It automates manual tasks, improves accuracy, and accelerates claim approvals, ensuring compliance and efficiency.",
+    stack: ["Python", "PyPDF2"],
+    link: "#",
+  },
+  {
     title: "Epidemic Response Management System",
     description:
       "This system was designed for managing epidemics/pandemics such as COVID.",
@@ -24,20 +38,20 @@ const data = [
     stack: ["React", "Django", "Socket.io"],
     link: "https://github.com/jav1anpry5ce/hotspot_alert",
   },
-  {
-    title: "Song Queue",
-    description:
-      "This application was created for UCC IT Club monthly Karaoke party.",
-    stack: ["React", "Node JS", "Socket.io"],
-    link: "https://github.com/jav1anpry5ce/song_queue",
-  },
-  {
-    title: "Space Invaders",
-    description:
-      "This is a simple space invaders game. The objective is to destroy the aliens before they reach the bottom of the screen.",
-    stack: ["Python", "Pygame"],
-    link: "https://github.com/jav1anpry5ce/Space-Invaders",
-  },
+  // {
+  //   title: "Song Queue",
+  //   description:
+  //     "This application was created for UCC IT Club monthly Karaoke party.",
+  //   stack: ["React", "Node JS", "Socket.io"],
+  //   link: "https://github.com/jav1anpry5ce/song_queue",
+  // },
+  // {
+  //   title: "Space Invaders",
+  //   description:
+  //     "This is a simple space invaders game. The objective is to destroy the aliens before they reach the bottom of the screen.",
+  //   stack: ["Python", "Pygame"],
+  //   link: "https://github.com/jav1anpry5ce/Space-Invaders",
+  // },
   {
     title: "Hospital Management System",
     description:
@@ -53,7 +67,7 @@ function BuildCard({ title, description, stack, link }) {
       href={link}
       target="_blank"
       rel="noreferrer"
-      className="flex min-h-[250px] w-[22rem] cursor-pointer flex-col justify-between gap-5 rounded bg-[#054f61] p-6 transition duration-200 hover:-translate-y-2 lg:w-[27rem]"
+      className="flex min-h-[300px] w-[22rem] cursor-pointer flex-col justify-between gap-5 rounded bg-[#054f61] p-6 transition duration-200 hover:-translate-y-2 lg:w-[27rem]"
     >
       <div className="flex items-center justify-between">
         <BsFolder2Open fontSize={30} className="text-muted" />

@@ -25,7 +25,7 @@ export default function FindMe() {
           />
         </a>
         <a
-          href="https://www.linkedin.com/in/javaughn-pryce-9441b814a/"
+          href="https://www.linkedin.com/in/javaughn-pryce/"
           target="_blank"
           rel="noreferrer"
           tabIndex="7"

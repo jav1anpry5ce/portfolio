@@ -12,9 +12,9 @@ const data = [
     link: "#",
   },
   {
-    title: "PDF Inspector",
+    title: "Session Notes Auditor",
     description:
-      "PDF Inspector expedites insurance claims processing by swiftly identifying inconsistencies in PDF documents. It automates manual tasks, improves accuracy, and accelerates claim approvals, ensuring compliance and efficiency.",
+      "Session Notes Auditor is a powerful tool for expediting insurance claims processing. It swiftly identifies inconsistencies in PDF documents, automating manual tasks and enhancing accuracy. This streamlined solution accelerates claim approvals while ensuring compliance and efficiency",
     stack: ["Python", "PyPDF2"],
     link: "#",
   },

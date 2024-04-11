@@ -12,9 +12,9 @@ const data = [
     link: "#",
   },
   {
-    title: "Session Notes Auditor",
+    title: "Session Note Auditor",
     description:
-      "Session Notes Auditor is a powerful tool for expediting insurance claims processing. It swiftly identifies inconsistencies in PDF documents, automating manual tasks and enhancing accuracy. This streamlined solution accelerates claim approvals while ensuring compliance and efficiency",
+      "Session Note Auditor is a powerful tool for expediting insurance claims processing. It swiftly identifies inconsistencies in PDF documents, automating manual tasks and enhancing accuracy. This streamlined solution accelerates claim approvals while ensuring compliance and efficiency",
     stack: ["Python", "PyPDF2"],
     link: "#",
   },

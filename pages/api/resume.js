@@ -4,7 +4,7 @@ import { promisify } from "util";
 
 const pipeline = promisify(stream.pipeline);
 const url =
-  "https://dl.dropbox.com/scl/fi/admxoo7hjb0qbfaizr6ck/Javaughn_Pryce_Resume.pdf?rlkey=uapcm3rbsfftjzchq70ql7pzn&dl=0";
+  "https://dl.dropbox.com/scl/fi/dybeqhnplpc7ox1nrvjuu/Javaughn_Pryce_Resume.pdf?rlkey=ve4wiz4y6y721gb3mx2s7fmot&st=rv6crzcn&dl=0";
 
 export default async function handler(req, res) {
   const response = await fetch(url); // replace this with your API call & options

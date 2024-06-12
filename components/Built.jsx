@@ -75,17 +75,19 @@ export default function Built({
                 </div>
               </a>
             )}
-            <a href={live} target="_blank" rel="noreferrer">
-              <div className="button group">
-                <p className="font-medium text-gray-200 transition duration-300 group-hover:text-white">
-                  Visit Site
-                </p>
-                <AiOutlineEye
-                  fontSize={30}
-                  className="cursor-pointer text-gray-200 transition duration-300 group-hover:text-white"
-                />
-              </div>
-            </a>
+            {live && (
+              <a href={live} target="_blank" rel="noreferrer">
+                <div className="button group">
+                  <p className="font-medium text-gray-200 transition duration-300 group-hover:text-white">
+                    Visit Site
+                  </p>
+                  <AiOutlineEye
+                    fontSize={30}
+                    className="cursor-pointer text-gray-200 transition duration-300 group-hover:text-white"
+                  />
+                </div>
+              </a>
+            )}
           </div>
         </motion.div>
       </div>
@@ -153,17 +155,19 @@ export default function Built({
                 </div>
               </a>
             )}
-            <a href={live} target="_blank" rel="noreferrer">
-              <div className="button group flex">
-                <p className="font-medium text-gray-200 transition duration-300 group-hover:text-white">
-                  Visit Site
-                </p>
-                <AiOutlineEye
-                  fontSize={30}
-                  className="cursor-pointer text-gray-200 transition duration-300 group-hover:text-white"
-                />
-              </div>
-            </a>
+            {live && (
+              <a href={live} target="_blank" rel="noreferrer">
+                <div className="button group flex">
+                  <p className="font-medium text-gray-200 transition duration-300 group-hover:text-white">
+                    Visit Site
+                  </p>
+                  <AiOutlineEye
+                    fontSize={30}
+                    className="cursor-pointer text-gray-200 transition duration-300 group-hover:text-white"
+                  />
+                </div>
+              </a>
+            )}
           </div>
         </motion.div>
       </div>

@@ -31,8 +31,7 @@ const data = [
     image: "/images/smash-karaoke.png",
     description: "Fun Karaoke App to sing along with friends",
     builtWith: ["React", "Tailwind CSS", "Socket.Io", "Node.js"],
-    github: "https://github.com/jav1anpry5ce/karaoke_app",
-    live: "https://smash-karaoke.vercel.app"
+    github: "https://github.com/jav1anpry5ce/karaoke_app"
   },
   {
     name: "Aspire CFS",
@@ -48,8 +47,7 @@ const data = [
     description:
       "This application was created for the department of Information Technology at University of the Commonwealth Caribbean. The application was used to host a virtual meeting with spatial voice chat capability hosting 30+ people.",
     builtWith: ["React", "Node JS", "Three JS", "Socket.io", "Tailwindcss"],
-    github: "https://github.com/jav1anpry5ce/spatial_virtual_meetings",
-    live: "https://meetings.javaughnpryce.live"
+    github: "https://github.com/jav1anpry5ce/spatial_virtual_meetings"
   }
 ];
 

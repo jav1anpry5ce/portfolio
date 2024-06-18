@@ -9,34 +9,35 @@ const data = [
     description:
       "MA Verification Checker automates medical assistance benefits eligibility verification using web scraping technology. It streamlines the process, ensures accuracy, and boosts operational efficiency, enabling timely access to healthcare services for eligible individuals.",
     stack: ["Python", "Selenium", "Pandas"],
-    link: "#",
+    link: "#"
   },
   {
     title: "Session Note Auditor",
     description:
       "Session Note Auditor is a powerful tool for expediting insurance claims processing. It swiftly identifies inconsistencies in PDF documents, automating manual tasks and enhancing accuracy. This streamlined solution accelerates claim approvals while ensuring compliance and efficiency",
     stack: ["Python", "PyPDF2"],
-    link: "#",
+    link: "#"
   },
   {
     title: "Epidemic Response Management System",
     description:
       "This system was designed for managing epidemics/pandemics such as COVID.",
     stack: ["Django", "React", "Tailwindcss", "Redux"],
-    link: "https://github.com/jav1anpry5ce/epidemic_management_system",
+    link: "https://github.com/jav1anpry5ce/epidemic_management_system"
   },
   {
     title: "Chat App",
     description: "Whatsapp like chat application.",
     stack: ["React", "Node JS", "Socket.io", "Tailwindcss"],
     link: "https://github.com/jav1anpry5ce/React-Chat-App",
+    live: "https://chatapp.javaughnpryce.site/"
   },
   {
     title: "Hotspot Alert",
     description:
       "The “Hotspot Alert” is a web application that allows its users to share current criminal occurrences the moment they happen.",
     stack: ["React", "Django", "Socket.io"],
-    link: "https://github.com/jav1anpry5ce/hotspot_alert",
+    link: "https://github.com/jav1anpry5ce/hotspot_alert"
   },
   // {
   //   title: "Song Queue",
@@ -57,8 +58,8 @@ const data = [
     description:
       "This is a hospital management system. It is a C# application that allows its hospital's to manage their patients and their records.",
     stack: ["C#", "SQL Server"],
-    link: "https://github.com/jav1anpry5ce/Hospital-Management-System",
-  },
+    link: "https://github.com/jav1anpry5ce/Hospital-Management-System"
+  }
 ];
 
 function BuildCard({ title, description, stack, link }) {

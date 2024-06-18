@@ -7,15 +7,15 @@ const data = [
   {
     title: "MA Verification Checker",
     description:
-      "MA Verification Checker automates medical assistance benefits eligibility verification using web scraping technology. It streamlines the process, ensures accuracy, and boosts operational efficiency, enabling timely access to healthcare services for eligible individuals.",
+      "MA Verification Checker automates medical assistance benefits eligibility verification using web scraping technology. Verify the eligibility of a patient for medical assistance benefits, then upload verified document to central reach",
     stack: ["Python", "Selenium", "Pandas"],
     link: "#"
   },
   {
-    title: "Session Note Auditor",
+    title: "Session Note Downloader",
     description:
-      "Session Note Auditor is a powerful tool for expediting insurance claims processing. It swiftly identifies inconsistencies in PDF documents, automating manual tasks and enhancing accuracy. This streamlined solution accelerates claim approvals while ensuring compliance and efficiency",
-    stack: ["Python", "PyPDF2"],
+      "Automates the downloading of session notes from a central reach",
+    stack: ["Python", "Selenium"],
     link: "#"
   },
   {

@@ -30,7 +30,7 @@ const data = [
     description: "Whatsapp like chat application.",
     stack: ["React", "Node JS", "Socket.io", "Tailwindcss"],
     link: "https://github.com/jav1anpry5ce/React-Chat-App",
-    live: "https://chatapp.javaughnpryce.site/"
+    live: "https://chatapp.javaughnpryce.net/"
   },
   {
     title: "Hotspot Alert",

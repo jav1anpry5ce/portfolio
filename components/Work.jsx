@@ -32,7 +32,7 @@ const data = [
     description: "Fun Karaoke App to sing along with friends",
     builtWith: ["React", "Tailwind CSS", "Socket.Io", "Node.js"],
     github: "https://github.com/jav1anpry5ce/karaoke_app",
-    live: "https://karaoke.javaughnpryce.site/#/"
+    live: "https://karaoke.javaughnpryce.net/#/"
   },
   {
     name: "Aspire CFS",
